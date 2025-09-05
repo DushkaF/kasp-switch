@@ -13,10 +13,7 @@
 #define KP2_LEN 20
 #define OP0_LEN 8
 
-uint8_t tier_1;
-uint8_t tier_2;
-uint8_t tier_3;
-uint8_t tier_4;
+uint8_t tiers[4];
 uint8_t series[13];
 
 
@@ -46,6 +43,21 @@ unsigned char Crc8(unsigned char *pcBlock, unsigned int len)
     return crc;
 }
 
+void  op0_send(int8_t num_1,int8_t num_2){     // Формируем ОП0
+      uint8_t op0[OP0_LEN];
+      op0[0] = PKT_OP0;        // тип пакета
+      op0[1] = num_1;         // номер цикла (старший байт)
+      op0[2] = num_2;         // номер цикла (младший байт)
+    
+      // состояние секторов 
+      for (int i;i<4;i++){
+        op0[i+3] = tiers[i];
+        }
+      op0[7] = Crc8(op0, OP0_LEN - 1);
+            
+      // Отправка ответа
+      Serial.write(op0, OP0_LEN);
+}
 bool decodeAndRespond(uint8_t *kp) {
   // Проверка CRC КП1
   if (kp[0]==PKT_KP1){
@@ -57,29 +69,8 @@ bool decodeAndRespond(uint8_t *kp) {
       uint16_t cycle = (kp[1] << 8) | kp[2];
       uint8_t pair = kp[3];
       uint8_t sector = kp[4];
-    
-    
-      // Формируем ОП0
-      uint8_t op0[OP0_LEN];
-      op0[0] = PKT_OP0;        // тип пакета
-      op0[1] = kp[1];         // номер цикла (старший байт)
-      op0[2] = kp[2];         // номер цикла (младший байт)
-    
-      // состояние секторов (для простоты сейчас фиксировано)
-      op0[3] = 0x00;           
-      op0[4] = 0x00;
-      op0[5] = 0x00;           
-      op0[6] = 0x00; 
-      op0[3+pair] = sector;
-      tier_1 = op0[3];
-      tier_2 = op0[4]; 
-      tier_3 = op0[5]; 
-      tier_4 = op0[6];           
-    
-      op0[7] = Crc8(op0, OP0_LEN - 1);
-    
-      // Отправка ответа
-      Serial.write(op0, OP0_LEN);
+      tiers[pair]=sector;
+      op0_send(kp[1],kp[2]);
       return 1;
     }
     else{
@@ -98,29 +89,8 @@ bool decodeAndRespond(uint8_t *kp) {
       for (int i=0;i<13;i++){
         series[i]=kp2[6+i];
         }
-    
-    
-      // Формируем ОП0
-      uint8_t op0[OP0_LEN];
-      op0[0] = PKT_OP0;        // тип пакета
-      op0[1] = kp[1];         // номер цикла (старший байт)
-      op0[2] = kp[2];         // номер цикла (младший байт)
-    
-      // состояние секторов (для простоты сейчас фиксировано)
-      op0[3] = 0x00;           
-      op0[4] = 0x00;
-      op0[5] = 0x00;           
-      op0[6] = 0x00; 
-      op0[3+pair] = series[12];
-      tier_1 = op0[3];
-      tier_2 = op0[4]; 
-      tier_3 = op0[5]; 
-      tier_4 = op0[6];           
-    
-      op0[7] = Crc8(op0, OP0_LEN - 1);
-    
-      // Отправка ответа
-      Serial.write(op0, OP0_LEN);
+      tiers[pair]=series[12];
+      op0_send(kp[1],kp[2]);
       return 1;
     }
     else{
@@ -134,23 +104,7 @@ bool decodeAndRespond(uint8_t *kp) {
       } 
     if (Crc8(kp0, KP0_LEN - 1) == kp0[KP0_LEN - 1]) {
       uint16_t cycle = (kp[1] << 8) | kp[2];    
-    
-      // Формируем ОП0
-      uint8_t op0[OP0_LEN];
-      op0[0] = PKT_OP0;        // тип пакета
-      op0[1] = kp[1];         // номер цикла (старший байт)
-      op0[2] = kp[2];         // номер цикла (младший байт)
-    
-      // состояние секторов (для простоты сейчас фиксировано)
-      op0[3] = tier_1;           
-      op0[4] = tier_2;
-      op0[5] = tier_3;           
-      op0[6] = tier_4;            
-    
-      op0[7] = Crc8(op0, OP0_LEN - 1);
-    
-      // Отправка ответа
-      Serial.write(op0, OP0_LEN);
+      op0_send(kp[1],kp[2]);
       return 1;
     }
     else{
