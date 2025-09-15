@@ -1,0 +1,27 @@
+# Игнорировать системные файлы macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Кэш-файлы Finder
+**/.DS_Store
+**/.AppleDouble
+**/.LSOverride
+
+# Файлы Spotlight
+.AppleDesktop
+.metadata_never_index
+.metadata_never_index_unless_rootfs
+
+# Корзина macOS
+.Trashes
+
+# Файлы временного кэша
+*.swp
+*.swo
+
+# Игнорировать файлы кэша macOS
+**/.fseventsd
+**/.Spotlight-V100
+**/.TemporaryItems
+**/.DocumentRevisions-V100
