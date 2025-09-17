@@ -1,0 +1,120 @@
+Removed Member From Class: ClassName=AMP1 Member=C1
+Removed Member From Class: ClassName=AMP1 Member=C2
+Removed Member From Class: ClassName=AMP1 Member=C3
+Removed Member From Class: ClassName=AMP2 Member=C4
+Removed Member From Class: ClassName=AMP2 Member=C5
+Removed Member From Class: ClassName=AMP4 Member=C6
+Removed Member From Class: ClassName=AMP4 Member=C7
+Removed Member From Class: ClassName=AMP2 Member=C8
+Removed Member From Class: ClassName=AMP4 Member=C9
+Removed Member From Class: ClassName=AMP4 Member=C10
+Removed Member From Class: ClassName=AMP3 Member=C13
+Removed Member From Class: ClassName=AMP3 Member=C14
+Removed Member From Class: ClassName=AMP3 Member=C15
+Removed Member From Class: ClassName=AMP3 Member=C16
+Removed Member From Class: ClassName=AMP1 Member=L1
+Removed Member From Class: ClassName=AMP1 Member=L2
+Removed Member From Class: ClassName=AMP2 Member=L3
+Removed Member From Class: ClassName=AMP4 Member=L4
+Removed Member From Class: ClassName=AMP2 Member=L5
+Removed Member From Class: ClassName=AMP4 Member=L6
+Removed Member From Class: ClassName=AMP3 Member=L7
+Removed Member From Class: ClassName=AMP3 Member=L8
+Removed Member From Class: ClassName=AMP3 Member=R1
+Change component parameters: Designator = "C1" ("C1"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\TYOBCHSB" ("\TYOBCHSB")
+Change component parameters: Designator = "C2" ("C2"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\OELSLBDX" ("\OELSLBDX")
+Change component parameters: Designator = "C3" ("C3"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\EYPHTTUP" ("\EYPHTTUP")
+Change component parameters: Designator = "C4" ("C4"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\FITWIKQQ" ("\FITWIKQQ")
+Change component parameters: Designator = "C5" ("C5"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\VSQXXDYT" ("\VSQXXDYT")
+Change component parameters: Designator = "C6" ("C6"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\BXSXMWBC" ("\BXSXMWBC")
+Change component parameters: Designator = "C7" ("C7"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\ACBYFZVQ" ("\ACBYFZVQ")
+Change component parameters: Designator = "C8" ("C8"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\RTQRCWDV" ("\RTQRCWDV")
+Change component parameters: Designator = "C9" ("C9"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\TZOYAGCZ" ("\TZOYAGCZ")
+Change component parameters: Designator = "C10" ("C10"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\VKXRKXWI" ("\VKXRKXWI")
+Change component parameters: Designator = "C13" ("C13"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\YMWAQCSZ" ("\YMWAQCSZ")
+Change component parameters: Designator = "C14" ("C14"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\KEQDGJCB" ("\KEQDGJCB")
+Change component parameters: Designator = "C15" ("C15"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\SVGMJNDE" ("\SVGMJNDE")
+Change component parameters: Designator = "C16" ("C16"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\UTJWDKDV" ("\UTJWDKDV")
+Change component parameters: Designator = "L1" ("L1"); Footprint = "FP-0402HP-MFG"; UniqueID = "\PSNSOYRB" ("\PSNSOYRB")
+Change component parameters: Designator = "L2" ("L2"); Footprint = "FP-0402HP-MFG"; UniqueID = "\TGFAOFCR" ("\TGFAOFCR")
+Change component parameters: Designator = "L3" ("L3"); Footprint = "FP-0402HP-MFG"; UniqueID = "\DMJCGEOL" ("\DMJCGEOL")
+Change component parameters: Designator = "L4" ("L4"); Footprint = "FP-0402HP-MFG"; UniqueID = "\HAKVHVAB" ("\HAKVHVAB")
+Change component parameters: Designator = "L5" ("L5"); Footprint = "FP-0402HP-MFG"; UniqueID = "\IVMXLCOQ" ("\IVMXLCOQ")
+Change component parameters: Designator = "L6" ("L6"); Footprint = "FP-0402HP-MFG"; UniqueID = "\JAMTXFBQ" ("\JAMTXFBQ")
+Change component parameters: Designator = "L7" ("L7"); Footprint = "FP-0402HP-MFG"; UniqueID = "\JDJJRUSO" ("\JDJJRUSO")
+Change component parameters: Designator = "L8" ("L8"); Footprint = "FP-0402HP-MFG"; UniqueID = "\SYRIDXWF" ("\SYRIDXWF")
+Change component parameters: Designator = "R1" ("R1"); Footprint = "RES0805"; UniqueID = "\WQDOXSDW" ("\WQDOXSDW")
+Added Pin To Net: NetName=+5 Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=+5 Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=+5 Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=+5 Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=+5 Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=+5 Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C11-1
+Added Pin To Net: NetName=+5 Pin=C11-2
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=+5 Pin=C12-2
+Added Pin To Net: NetName=+5 Pin=C14-1
+Added Pin To Net: NetName=GND Pin=C14-2
+Added Pin To Net: NetName=+5 Pin=C15-1
+Added Pin To Net: NetName=GND Pin=C15-2
+Added Pin To Net: NetName=+5 Pin=L1-2
+Added Pin To Net: NetName=GND Pin=L2-1
+Added Pin To Net: NetName=NetDA1_2 Pin=L2-2
+Added Pin To Net: NetName=+5 Pin=L3-2
+Added Pin To Net: NetName=+5 Pin=L4-2
+Added Pin To Net: NetName=GND Pin=L5-1
+Added Pin To Net: NetName=NetDA3_2 Pin=L5-2
+Added Pin To Net: NetName=GND Pin=L6-1
+Added Pin To Net: NetName=+5 Pin=L7-2
+Added Pin To Net: NetName=GND Pin=L8-1
+Added Pin To Net: NetName=NetDA5_2 Pin=L8-2
+Added Pin To Net: NetName=NetC3_1 Pin=C3-1
+Added Pin To Net: NetName=NetC3_1 Pin=DA2-12
+Added Net: Name=NetC3_1
+Added Pin To Net: NetName=NetC3_2 Pin=C3-2
+Added Pin To Net: NetName=NetC3_2 Pin=DA1-8
+Added Pin To Net: NetName=NetC3_2 Pin=L1-1
+Added Net: Name=NetC3_2
+Added Pin To Net: NetName=NetC8_1 Pin=C8-1
+Added Pin To Net: NetName=NetC8_1 Pin=DA2-9
+Added Net: Name=NetC8_1
+Added Pin To Net: NetName=NetC8_2 Pin=C8-2
+Added Pin To Net: NetName=NetC8_2 Pin=DA3-8
+Added Pin To Net: NetName=NetC8_2 Pin=L3-1
+Added Net: Name=NetC8_2
+Added Pin To Net: NetName=NetC9_1 Pin=C9-1
+Added Pin To Net: NetName=NetC9_1 Pin=XW3-1
+Added Net: Name=NetC9_1
+Added Pin To Net: NetName=NetC9_2 Pin=C9-2
+Added Pin To Net: NetName=NetC9_2 Pin=DA4-8
+Added Pin To Net: NetName=NetC9_2 Pin=L4-1
+Added Net: Name=NetC9_2
+Added Pin To Net: NetName=NetC10_1 Pin=C10-1
+Added Pin To Net: NetName=NetC10_1 Pin=DA4-2
+Added Pin To Net: NetName=NetC10_1 Pin=L6-2
+Added Net: Name=NetC10_1
+Added Pin To Net: NetName=NetC10_2 Pin=C10-2
+Added Pin To Net: NetName=NetC10_2 Pin=DA2-15
+Added Net: Name=NetC10_2
+Added Pin To Net: NetName=NetC13_1 Pin=C13-1
+Added Pin To Net: NetName=NetC13_1 Pin=R1-2
+Added Net: Name=NetC13_1
+Added Pin To Net: NetName=NetC13_2 Pin=C13-2
+Added Pin To Net: NetName=NetC13_2 Pin=DA2-1
+Added Net: Name=NetC13_2
+Added Pin To Net: NetName=NetC16_1 Pin=C16-1
+Added Pin To Net: NetName=NetC16_1 Pin=DA2-4
+Added Net: Name=NetC16_1
+Added Pin To Net: NetName=NetC16_2 Pin=C16-2
+Added Pin To Net: NetName=NetC16_2 Pin=DA5-8
+Added Pin To Net: NetName=NetC16_2 Pin=L7-1
+Added Net: Name=NetC16_2
+Added Member To Class: ClassName=AMP3 Member=Component XW4 SMA
+Added Member To Class: ClassName=Принципиальная схема Member=Component XW4 SMA

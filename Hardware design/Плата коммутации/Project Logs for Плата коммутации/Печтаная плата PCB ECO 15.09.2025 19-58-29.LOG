@@ -1,0 +1,247 @@
+Added Component: Designator=C1(FP-GJM155-0_05-IPC_A)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP1"; VariantName = "[No Variations]"
+Added Component: Designator=C2(FP-GJM155-0_05-IPC_A)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP1"; VariantName = "[No Variations]"
+Added Component: Designator=C3(FP-GJM155-0_05-IPC_A)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP1"; VariantName = "[No Variations]"
+Added Component: Designator=C4(FP-GJM155-0_05-IPC_A)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP2"; VariantName = "[No Variations]"
+Added Component: Designator=C5(FP-GJM155-0_05-IPC_A)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP2"; VariantName = "[No Variations]"
+Added Component: Designator=C6(FP-GJM155-0_05-IPC_A)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP4"; VariantName = "[No Variations]"
+Added Component: Designator=C7(FP-GJM155-0_05-IPC_A)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP4"; VariantName = "[No Variations]"
+Added Component: Designator=C8(FP-GJM155-0_05-IPC_A)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP2"; VariantName = "[No Variations]"
+Added Component: Designator=C9(FP-GJM155-0_05-IPC_A)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP4"; VariantName = "[No Variations]"
+Added Component: Designator=C10(FP-GJM155-0_05-IPC_A)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP4"; VariantName = "[No Variations]"
+Added Component: Designator=C11(FP-GJM155-0_05-IPC_A)
+Added Component: Designator=C12(FP-GJM155-0_05-IPC_A)
+Added Component: Designator=C13(FP-GJM155-0_05-IPC_A)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP3"; VariantName = "[No Variations]"
+Added Component: Designator=C14(FP-GJM155-0_05-IPC_A)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP3"; VariantName = "[No Variations]"
+Added Component: Designator=C15(FP-GJM155-0_05-IPC_A)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP3"; VariantName = "[No Variations]"
+Added Component: Designator=C16(FP-GJM155-0_05-IPC_A)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP3"; VariantName = "[No Variations]"
+Added Component: Designator=DA1(FP-DQ1225-IPC_A)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP1"; VariantName = "[No Variations]"
+Added Component: Designator=DA2(FP-CP-16-38-IPC_A)
+Added Component: Designator=DA3(FP-DQ1225-IPC_A)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP2"; VariantName = "[No Variations]"
+Added Component: Designator=DA4(FP-DQ1225-IPC_A)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP4"; VariantName = "[No Variations]"
+Added Component: Designator=DA5(FP-DQ1225-IPC_A)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP3"; VariantName = "[No Variations]"
+Added Component: Designator=L1(FP-0402HP-MFG)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP1"; VariantName = "[No Variations]"
+Added Component: Designator=L2(FP-0402HP-MFG)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP1"; VariantName = "[No Variations]"
+Added Component: Designator=L3(FP-0402HP-MFG)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP2"; VariantName = "[No Variations]"
+Added Component: Designator=L4(FP-0402HP-MFG)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP4"; VariantName = "[No Variations]"
+Added Component: Designator=L5(FP-0402HP-MFG)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP2"; VariantName = "[No Variations]"
+Added Component: Designator=L6(FP-0402HP-MFG)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP4"; VariantName = "[No Variations]"
+Added Component: Designator=L7(FP-0402HP-MFG)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP3"; VariantName = "[No Variations]"
+Added Component: Designator=L8(FP-0402HP-MFG)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP3"; VariantName = "[No Variations]"
+Added Component: Designator=R1(RES0805)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP3"; VariantName = "[No Variations]"
+Added Component: Designator=X1(FP-S2B-XH-A-1_LF_SN-MFG)
+Add component (AddParameter): Name = "Net1"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Net2"; Value = "+5V"; VariantName = "[No Variations]"
+Added Component: Designator=X2(FP-S3B-XH-A-1_LF_SN-MFG)
+Add component (AddParameter): Name = "Net1"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Net2"; Value = "A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Net3"; Value = "B"; VariantName = "[No Variations]"
+Added Component: Designator=XW1(S-P2152-19CQA)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP1"; VariantName = "[No Variations]"
+Added Component: Designator=XW2(S-P2152-19CQA)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP2"; VariantName = "[No Variations]"
+Added Component: Designator=XW3(S-P2152-19CQA)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP4"; VariantName = "[No Variations]"
+Added Component: Designator=XW4(S-P2152-19CQA)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP3"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin C1-3
+Add Pin To Net: Unknown Pin: Pin C1-4
+Add Pin To Net: Unknown Pin: Pin C2-3
+Add Pin To Net: Unknown Pin: Pin C2-4
+Add Pin To Net: Unknown Pin: Pin C3-3
+Add Pin To Net: Unknown Pin: Pin C3-4
+Add Pin To Net: Unknown Pin: Pin C4-3
+Add Pin To Net: Unknown Pin: Pin C4-4
+Add Pin To Net: Unknown Pin: Pin C5-3
+Add Pin To Net: Unknown Pin: Pin C5-4
+Add Pin To Net: Unknown Pin: Pin C6-3
+Add Pin To Net: Unknown Pin: Pin C6-4
+Add Pin To Net: Unknown Pin: Pin C7-3
+Add Pin To Net: Unknown Pin: Pin C7-4
+Add Pin To Net: Unknown Pin: Pin C8-3
+Add Pin To Net: Unknown Pin: Pin C8-4
+Add Pin To Net: Unknown Pin: Pin C9-3
+Add Pin To Net: Unknown Pin: Pin C9-4
+Add Pin To Net: Unknown Pin: Pin C10-3
+Add Pin To Net: Unknown Pin: Pin C10-4
+Add Pin To Net: Unknown Pin: Pin C11-3
+Add Pin To Net: Unknown Pin: Pin C11-4
+Add Pin To Net: Unknown Pin: Pin C12-3
+Add Pin To Net: Unknown Pin: Pin C12-4
+Add Pin To Net: Unknown Pin: Pin C13-3
+Add Pin To Net: Unknown Pin: Pin C13-4
+Add Pin To Net: Unknown Pin: Pin C14-3
+Add Pin To Net: Unknown Pin: Pin C14-4
+Add Pin To Net: Unknown Pin: Pin C15-3
+Add Pin To Net: Unknown Pin: Pin C15-4
+Add Pin To Net: Unknown Pin: Pin C16-3
+Add Pin To Net: Unknown Pin: Pin C16-4
+Added Pin To Net: NetName=NetDA1_2 Pin=DA1-2
+Added Pin To Net: NetName=NetC3_4 Pin=DA1-8
+Added Pin To Net: NetName=GND Pin=DA1-13
+Added Pin To Net: NetName=NetC13_4 Pin=DA2-1
+Added Pin To Net: NetName=GND Pin=DA2-2
+Added Pin To Net: NetName=GND Pin=DA2-3
+Added Pin To Net: NetName=NetC16_3 Pin=DA2-4
+Added Pin To Net: NetName=GND Pin=DA2-5
+Added Pin To Net: NetName=+5 Pin=DA2-6
+Added Pin To Net: NetName=B Pin=DA2-7
+Added Pin To Net: NetName=A Pin=DA2-8
+Added Pin To Net: NetName=NetC8_3 Pin=DA2-9
+Added Pin To Net: NetName=GND Pin=DA2-10
+Added Pin To Net: NetName=GND Pin=DA2-11
+Added Pin To Net: NetName=NetC3_3 Pin=DA2-12
+Added Pin To Net: NetName=GND Pin=DA2-13
+Added Pin To Net: NetName=GND Pin=DA2-14
+Added Pin To Net: NetName=NetC10_4 Pin=DA2-15
+Added Pin To Net: NetName=GND Pin=DA2-16
+Added Pin To Net: NetName=GND Pin=DA2-17
+Added Pin To Net: NetName=NetDA3_2 Pin=DA3-2
+Added Pin To Net: NetName=NetC8_4 Pin=DA3-8
+Added Pin To Net: NetName=GND Pin=DA3-13
+Added Pin To Net: NetName=NetC10_3 Pin=DA4-2
+Added Pin To Net: NetName=NetC9_4 Pin=DA4-8
+Added Pin To Net: NetName=GND Pin=DA4-13
+Added Pin To Net: NetName=NetDA5_2 Pin=DA5-2
+Added Pin To Net: NetName=NetC16_4 Pin=DA5-8
+Added Pin To Net: NetName=GND Pin=DA5-13
+Add Pin To Net: Unknown Pin: Pin L1-5
+Add Pin To Net: Unknown Pin: Pin L1-5
+Add Pin To Net: Unknown Pin: Pin L2-5
+Add Pin To Net: Unknown Pin: Pin L2-5
+Add Pin To Net: Unknown Pin: Pin L3-5
+Add Pin To Net: Unknown Pin: Pin L3-5
+Add Pin To Net: Unknown Pin: Pin L4-5
+Add Pin To Net: Unknown Pin: Pin L4-5
+Add Pin To Net: Unknown Pin: Pin L5-5
+Add Pin To Net: Unknown Pin: Pin L5-5
+Add Pin To Net: Unknown Pin: Pin L6-5
+Add Pin To Net: Unknown Pin: Pin L6-5
+Add Pin To Net: Unknown Pin: Pin L7-5
+Add Pin To Net: Unknown Pin: Pin L7-5
+Add Pin To Net: Unknown Pin: Pin L8-5
+Add Pin To Net: Unknown Pin: Pin L8-5
+Added Pin To Net: NetName=GND Pin=R1-1
+Added Pin To Net: NetName=NetC13_3 Pin=R1-2
+Added Pin To Net: NetName=GND Pin=X1-1
+Added Pin To Net: NetName=+5 Pin=X1-2
+Added Pin To Net: NetName=GND Pin=X2-1
+Added Pin To Net: NetName=A Pin=X2-2
+Added Pin To Net: NetName=B Pin=X2-3
+Added Pin To Net: NetName=NetDA1_2 Pin=XW1-1
+Added Pin To Net: NetName=GND Pin=XW1-2
+Added Pin To Net: NetName=GND Pin=XW1-2
+Added Pin To Net: NetName=GND Pin=XW1-2
+Added Pin To Net: NetName=GND Pin=XW1-2
+Added Pin To Net: NetName=NetDA3_2 Pin=XW2-1
+Added Pin To Net: NetName=GND Pin=XW2-2
+Added Pin To Net: NetName=GND Pin=XW2-2
+Added Pin To Net: NetName=GND Pin=XW2-2
+Added Pin To Net: NetName=GND Pin=XW2-2
+Added Pin To Net: NetName=NetC9_3 Pin=XW3-1
+Added Pin To Net: NetName=GND Pin=XW3-2
+Added Pin To Net: NetName=GND Pin=XW3-2
+Added Pin To Net: NetName=GND Pin=XW3-2
+Added Pin To Net: NetName=GND Pin=XW3-2
+Added Pin To Net: NetName=NetDA5_2 Pin=XW4-1
+Added Pin To Net: NetName=GND Pin=XW4-2
+Added Pin To Net: NetName=GND Pin=XW4-2
+Added Pin To Net: NetName=GND Pin=XW4-2
+Added Pin To Net: NetName=GND Pin=XW4-2
+Added Member To Class: ClassName=AMP1 Member=Component C1 ?
+Added Member To Class: ClassName=Принципиальная схема Member=Component C1 ?
+Added Member To Class: ClassName=AMP1 Member=Component C2 ?
+Added Member To Class: ClassName=Принципиальная схема Member=Component C2 ?
+Added Member To Class: ClassName=AMP1 Member=Component C3 ?
+Added Member To Class: ClassName=Принципиальная схема Member=Component C3 ?
+Added Member To Class: ClassName=AMP2 Member=Component C4 ?
+Added Member To Class: ClassName=Принципиальная схема Member=Component C4 ?
+Added Member To Class: ClassName=AMP2 Member=Component C5 ?
+Added Member To Class: ClassName=Принципиальная схема Member=Component C5 ?
+Added Member To Class: ClassName=AMP4 Member=Component C6 ?
+Added Member To Class: ClassName=Принципиальная схема Member=Component C6 ?
+Added Member To Class: ClassName=AMP4 Member=Component C7 ?
+Added Member To Class: ClassName=Принципиальная схема Member=Component C7 ?
+Added Member To Class: ClassName=AMP2 Member=Component C8 ?
+Added Member To Class: ClassName=Принципиальная схема Member=Component C8 ?
+Added Member To Class: ClassName=AMP4 Member=Component C9 ?
+Added Member To Class: ClassName=Принципиальная схема Member=Component C9 ?
+Added Member To Class: ClassName=AMP4 Member=Component C10 ?
+Added Member To Class: ClassName=Принципиальная схема Member=Component C10 ?
+Added Member To Class: ClassName=Принципиальная схема Member=Component C11 ?
+Added Member To Class: ClassName=Принципиальная схема Member=Component C12 ?
+Added Member To Class: ClassName=AMP3 Member=Component C13 ?
+Added Member To Class: ClassName=Принципиальная схема Member=Component C13 ?
+Added Member To Class: ClassName=AMP3 Member=Component C14 ?
+Added Member To Class: ClassName=Принципиальная схема Member=Component C14 ?
+Added Member To Class: ClassName=AMP3 Member=Component C15 ?
+Added Member To Class: ClassName=Принципиальная схема Member=Component C15 ?
+Added Member To Class: ClassName=AMP3 Member=Component C16 ?
+Added Member To Class: ClassName=Принципиальная схема Member=Component C16 ?
+Added Member To Class: ClassName=AMP1 Member=Component DA1 PMA3-83LN+
+Added Member To Class: ClassName=Принципиальная схема Member=Component DA1 PMA3-83LN+
+Added Member To Class: ClassName=Принципиальная схема Member=Component DA2 HMC7992
+Added Member To Class: ClassName=AMP2 Member=Component DA3 PMA3-83LN+
+Added Member To Class: ClassName=Принципиальная схема Member=Component DA3 PMA3-83LN+
+Added Member To Class: ClassName=AMP4 Member=Component DA4 PMA3-83LN+
+Added Member To Class: ClassName=Принципиальная схема Member=Component DA4 PMA3-83LN+
+Added Member To Class: ClassName=AMP3 Member=Component DA5 PMA3-83LN+
+Added Member To Class: ClassName=Принципиальная схема Member=Component DA5 PMA3-83LN+
+Added Member To Class: ClassName=AMP1 Member=Component L1 L
+Added Member To Class: ClassName=Принципиальная схема Member=Component L1 L
+Added Member To Class: ClassName=AMP1 Member=Component L2 L
+Added Member To Class: ClassName=Принципиальная схема Member=Component L2 L
+Added Member To Class: ClassName=AMP2 Member=Component L3 L
+Added Member To Class: ClassName=Принципиальная схема Member=Component L3 L
+Added Member To Class: ClassName=AMP4 Member=Component L4 L
+Added Member To Class: ClassName=Принципиальная схема Member=Component L4 L
+Added Member To Class: ClassName=AMP2 Member=Component L5 L
+Added Member To Class: ClassName=Принципиальная схема Member=Component L5 L
+Added Member To Class: ClassName=AMP4 Member=Component L6 L
+Added Member To Class: ClassName=Принципиальная схема Member=Component L6 L
+Added Member To Class: ClassName=AMP3 Member=Component L7 L
+Added Member To Class: ClassName=Принципиальная схема Member=Component L7 L
+Added Member To Class: ClassName=AMP3 Member=Component L8 L
+Added Member To Class: ClassName=Принципиальная схема Member=Component L8 L
+Added Member To Class: ClassName=AMP3 Member=Component R1 R
+Added Member To Class: ClassName=Принципиальная схема Member=Component R1 R
+Added Member To Class: ClassName=Принципиальная схема Member=Component X1 JST-2P
+Added Member To Class: ClassName=Принципиальная схема Member=Component X2 JST-3P
+Added Member To Class: ClassName=AMP1 Member=Component XW1 SMA
+Added Member To Class: ClassName=Принципиальная схема Member=Component XW1 SMA
+Added Member To Class: ClassName=AMP2 Member=Component XW2 SMA
+Added Member To Class: ClassName=Принципиальная схема Member=Component XW2 SMA
+Added Member To Class: ClassName=AMP4 Member=Component XW3 SMA
+Added Member To Class: ClassName=Принципиальная схема Member=Component XW3 SMA
+Added Member To Class: ClassName=AMP3 Member=Component XW4 SMA
+Added Member To Class: ClassName=Принципиальная схема Member=Component XW4 SMA
+Added Room: Name=AMP1
+Added Room: Name=AMP2
+Added Room: Name=AMP3
+Added Room: Name=AMP4

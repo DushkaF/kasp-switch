@@ -1,0 +1,118 @@
+Change component parameters: Designator = "C1" ("C1"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\TYOBCHSB" ("\TYOBCHSB")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP1"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C2" ("C2"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\OELSLBDX" ("\OELSLBDX")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP1"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C3" ("C3"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\EYPHTTUP" ("\EYPHTTUP")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP1"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C4" ("C4"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\FITWIKQQ" ("\FITWIKQQ")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP2"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C5" ("C5"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\VSQXXDYT" ("\VSQXXDYT")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP2"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C6" ("C6"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\BXSXMWBC" ("\BXSXMWBC")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP4"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C7" ("C7"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\ACBYFZVQ" ("\ACBYFZVQ")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP4"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C8" ("C8"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\RTQRCWDV" ("\RTQRCWDV")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP2"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C9" ("C9"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\TZOYAGCZ" ("\TZOYAGCZ")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP4"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C10" ("C10"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\VKXRKXWI" ("\VKXRKXWI")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP4"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C13" ("C13"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\YMWAQCSZ" ("\YMWAQCSZ")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP3"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C14" ("C14"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\KEQDGJCB" ("\KEQDGJCB")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP3"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C15" ("C15"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\SVGMJNDE" ("\SVGMJNDE")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP3"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C16" ("C16"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\UTJWDKDV" ("\UTJWDKDV")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP3"; VariantName = "[No Variations]"
+Change component parameters: Designator = "DA1" ("DA1"); Footprint = "FP-DQ1225-IPC_A"; UniqueID = "\RWMQYKCI" ("\RWMQYKCI")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP1"; VariantName = "[No Variations]"
+Change component parameters: Designator = "DA3" ("DA3"); Footprint = "FP-DQ1225-IPC_A"; UniqueID = "\DRPFAMNP" ("\DRPFAMNP")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP2"; VariantName = "[No Variations]"
+Change component parameters: Designator = "DA4" ("DA4"); Footprint = "FP-DQ1225-IPC_A"; UniqueID = "\LHWVHSRX" ("\LHWVHSRX")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP4"; VariantName = "[No Variations]"
+Change component parameters: Designator = "DA5" ("DA5"); Footprint = "FP-DQ1225-IPC_A"; UniqueID = "\LMJASDIE" ("\LMJASDIE")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP3"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L1" ("L1"); Footprint = "FP-0402HP-MFG"; UniqueID = "\PSNSOYRB" ("\PSNSOYRB")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP1"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L2" ("L2"); Footprint = "FP-0402HP-MFG"; UniqueID = "\TGFAOFCR" ("\TGFAOFCR")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP1"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L3" ("L3"); Footprint = "FP-0402HP-MFG"; UniqueID = "\DMJCGEOL" ("\DMJCGEOL")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP2"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L4" ("L4"); Footprint = "FP-0402HP-MFG"; UniqueID = "\HAKVHVAB" ("\HAKVHVAB")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP4"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L5" ("L5"); Footprint = "FP-0402HP-MFG"; UniqueID = "\IVMXLCOQ" ("\IVMXLCOQ")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP2"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L6" ("L6"); Footprint = "FP-0402HP-MFG"; UniqueID = "\JAMTXFBQ" ("\JAMTXFBQ")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP4"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L7" ("L7"); Footprint = "FP-0402HP-MFG"; UniqueID = "\JDJJRUSO" ("\JDJJRUSO")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP3"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L8" ("L8"); Footprint = "FP-0402HP-MFG"; UniqueID = "\SYRIDXWF" ("\SYRIDXWF")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP3"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R1" ("R1"); Footprint = "RES0805"; UniqueID = "\WQDOXSDW" ("\WQDOXSDW")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP3"; VariantName = "[No Variations]"
+Change component parameters: Designator = "XW1" ("XW1"); Footprint = "S-P2152-19CQA"; UniqueID = "\LSXOSTYR" ("\LSXOSTYR")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP1"; VariantName = "[No Variations]"
+Change component parameters: Designator = "XW2" ("XW2"); Footprint = "S-P2152-19CQA"; UniqueID = "\RFWGYOQG" ("\RFWGYOQG")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP2"; VariantName = "[No Variations]"
+Change component parameters: Designator = "XW3" ("XW3"); Footprint = "S-P2152-19CQA"; UniqueID = "\SKCFFFNK" ("\SKCFFFNK")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP4"; VariantName = "[No Variations]"
+Change component parameters: Designator = "XW4" ("XW4"); Footprint = "S-P2152-19CQA"; UniqueID = "\HAUJOKDT" ("\HAUJOKDT")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP3"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin C1-3
+Add Pin To Net: Unknown Pin: Pin C1-4
+Add Pin To Net: Unknown Pin: Pin C2-3
+Add Pin To Net: Unknown Pin: Pin C2-4
+Add Pin To Net: Unknown Pin: Pin C3-3
+Add Pin To Net: Unknown Pin: Pin C3-4
+Add Pin To Net: Unknown Pin: Pin C4-3
+Add Pin To Net: Unknown Pin: Pin C4-4
+Add Pin To Net: Unknown Pin: Pin C5-3
+Add Pin To Net: Unknown Pin: Pin C5-4
+Add Pin To Net: Unknown Pin: Pin C6-3
+Add Pin To Net: Unknown Pin: Pin C6-4
+Add Pin To Net: Unknown Pin: Pin C7-3
+Add Pin To Net: Unknown Pin: Pin C7-4
+Add Pin To Net: Unknown Pin: Pin C8-3
+Add Pin To Net: Unknown Pin: Pin C8-4
+Add Pin To Net: Unknown Pin: Pin C9-3
+Add Pin To Net: Unknown Pin: Pin C9-4
+Add Pin To Net: Unknown Pin: Pin C10-3
+Add Pin To Net: Unknown Pin: Pin C10-4
+Add Pin To Net: Unknown Pin: Pin C11-3
+Add Pin To Net: Unknown Pin: Pin C11-4
+Add Pin To Net: Unknown Pin: Pin C12-3
+Add Pin To Net: Unknown Pin: Pin C12-4
+Add Pin To Net: Unknown Pin: Pin C13-3
+Add Pin To Net: Unknown Pin: Pin C13-4
+Add Pin To Net: Unknown Pin: Pin C14-3
+Add Pin To Net: Unknown Pin: Pin C14-4
+Add Pin To Net: Unknown Pin: Pin C15-3
+Add Pin To Net: Unknown Pin: Pin C15-4
+Add Pin To Net: Unknown Pin: Pin C16-3
+Add Pin To Net: Unknown Pin: Pin C16-4
+Add Pin To Net: Unknown Pin: Pin L1-5
+Add Pin To Net: Unknown Pin: Pin L1-5
+Add Pin To Net: Unknown Pin: Pin L2-5
+Add Pin To Net: Unknown Pin: Pin L2-5
+Add Pin To Net: Unknown Pin: Pin L3-5
+Add Pin To Net: Unknown Pin: Pin L3-5
+Add Pin To Net: Unknown Pin: Pin L4-5
+Add Pin To Net: Unknown Pin: Pin L4-5
+Add Pin To Net: Unknown Pin: Pin L5-5
+Add Pin To Net: Unknown Pin: Pin L5-5
+Add Pin To Net: Unknown Pin: Pin L6-5
+Add Pin To Net: Unknown Pin: Pin L6-5
+Add Pin To Net: Unknown Pin: Pin L7-5
+Add Pin To Net: Unknown Pin: Pin L7-5
+Add Pin To Net: Unknown Pin: Pin L8-5
+Add Pin To Net: Unknown Pin: Pin L8-5
+Added Class: Name=AMP1
+Added Class: Name=AMP2
+Added Class: Name=AMP3
+Added Class: Name=AMP4
+Added Room: Name=AMP1
+Added Room: Name=AMP2
+Added Room: Name=AMP3
+Added Room: Name=AMP4

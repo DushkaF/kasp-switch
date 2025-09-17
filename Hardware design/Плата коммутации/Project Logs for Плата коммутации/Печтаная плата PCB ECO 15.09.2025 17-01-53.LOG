@@ -1,0 +1,12 @@
+Added Component: Designator=DA?(FP-CP-16-38-IPC_A)
+Added Pin To Net: NetName=NetDA?_2, 3, 5, 10, 11, 13, 14, 16, 17 Pin=DA?-2
+Added Pin To Net: NetName=NetDA?_2, 3, 5, 10, 11, 13, 14, 16, 17 Pin=DA?-3
+Added Pin To Net: NetName=NetDA?_2, 3, 5, 10, 11, 13, 14, 16, 17 Pin=DA?-5
+Added Pin To Net: NetName=NetDA?_2, 3, 5, 10, 11, 13, 14, 16, 17 Pin=DA?-10
+Added Pin To Net: NetName=NetDA?_2, 3, 5, 10, 11, 13, 14, 16, 17 Pin=DA?-11
+Added Pin To Net: NetName=NetDA?_2, 3, 5, 10, 11, 13, 14, 16, 17 Pin=DA?-13
+Added Pin To Net: NetName=NetDA?_2, 3, 5, 10, 11, 13, 14, 16, 17 Pin=DA?-14
+Added Pin To Net: NetName=NetDA?_2, 3, 5, 10, 11, 13, 14, 16, 17 Pin=DA?-16
+Added Pin To Net: NetName=NetDA?_2, 3, 5, 10, 11, 13, 14, 16, 17 Pin=DA?-17
+Added Net: Name=NetDA?_2, 3, 5, 10, 11, 13, 14, 16, 17
+Added Class: Name=Принципиальная схема

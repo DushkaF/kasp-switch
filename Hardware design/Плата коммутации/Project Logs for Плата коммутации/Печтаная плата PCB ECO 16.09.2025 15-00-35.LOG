@@ -1,0 +1,27 @@
+Change Component Comment : Designator=C2 Old Comment=? New Comment=10nF
+Change Component Comment : Designator=C5 Old Comment=? New Comment=10nF
+Change Component Comment : Designator=C7 Old Comment=? New Comment=10nF
+Change Component Comment : Designator=C11 Old Comment=? New Comment=10 nF
+Change Component Comment : Designator=C15 Old Comment=? New Comment=10nF
+Change Component Comment : Designator=C1 Old Comment=? New Comment=10pF
+Change Component Comment : Designator=C4 Old Comment=? New Comment=10pF
+Change Component Comment : Designator=C6 Old Comment=? New Comment=10pF
+Change Component Comment : Designator=C12 Old Comment=? New Comment=10 pF
+Change Component Comment : Designator=C14 Old Comment=? New Comment=10pF
+Change Component Comment : Designator=C3 Old Comment=? New Comment=100 pF
+Change Component Comment : Designator=C8 Old Comment=? New Comment=100pF
+Change Component Comment : Designator=C9 Old Comment=? New Comment=100pF
+Change Component Comment : Designator=C10 Old Comment=? New Comment=100pF
+Change Component Comment : Designator=C13 Old Comment=? New Comment=100pF
+Change Component Comment : Designator=C16 Old Comment=? New Comment=100pF
+Change Component Comment : Designator=L5 Old Comment=L New Comment=18nF
+Change Component Comment : Designator=L2 Old Comment=L New Comment=18nH
+Change Component Comment : Designator=L6 Old Comment=L New Comment=18nH
+Change Component Comment : Designator=L8 Old Comment=L New Comment=18nH
+Change Component Comment : Designator=L1 Old Comment=L New Comment=39 nH
+Change Component Comment : Designator=L3 Old Comment=L New Comment=39nH
+Change Component Comment : Designator=L4 Old Comment=L New Comment=39nH
+Change Component Comment : Designator=L7 Old Comment=L New Comment=39nH
+Change Component Comment : Designator=R1 Old Comment=R New Comment=50
+Added Member To Class: ClassName=AMP3 Member=Component XW4 SMA
+Added Member To Class: ClassName=Принципиальная схема Member=Component XW4 SMA
