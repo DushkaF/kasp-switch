@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=GND Pin=R2-1
+Removed Pin From Net: NetName=NetC13_1 Pin=R2-2
+Removed Member From Class: ClassName=Принципиальная схема Member=R2
