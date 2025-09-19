@@ -1,0 +1,22 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Плата коммутации.PrjPcb]
+   Generated File[Печтаная плата.GTO]
+   Generated File[Печтаная плата.GTP]
+   Generated File[Печтаная плата.GTS]
+   Generated File[Печтаная плата.GTL]
+   Generated File[Печтаная плата.G1]
+   Generated File[Печтаная плата.G2]
+   Generated File[Печтаная плата.GBL]
+   Generated File[Печтаная плата.GBS]
+   Generated File[Печтаная плата.GBP]
+   Generated File[Печтаная плата.GBO]
+   Generated File[Печтаная плата.GM]
+   Generated File[Печтаная плата.EXTREP]
+   Generated File[Печтаная плата.REP]
+
+
+Files Generated   : 13
+Documents Printed : 0
+
+Finished Output Generation At 22:52:03 On 19.09.2025
