@@ -1,0 +1,105 @@
+Removed Pin From Net: NetName=NetC16_1 Pin=DA2-4
+Removed Pin From Net: NetName=NetC8_1 Pin=DA2-9
+Removed Pin From Net: NetName=NetC3_1 Pin=DA2-12
+Removed Pin From Net: NetName=NetC9_1 Pin=XW3-1
+Removed Member From Class: ClassName=AMP4 Member=DA4
+Removed Member From Class: ClassName=RF_SAME Member=NetC8_1
+Removed Member From Class: ClassName=RF Member=NetC10_1
+Removed Member From Class: ClassName=RF Member=NetC10_2
+Change Component Comment : Designator=L4 Old Comment=39nH New Comment=39 nH
+Change Component Comment : Designator=C10 Old Comment=100pF New Comment=10pF
+Change Component Comment : Designator=C9 Old Comment=100pF New Comment=100 pF
+Change component parameters: Designator = "DA4" ("DA4"); Footprint = "FP-DQ1225-IPC_A"; UniqueID = "\ZZKJQZEV" ("\ZZKJQZEV")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "AMP1"; VariantName = "[No Variations]"
+Added Component: Designator=C17(FP-GJM155-0_05-IPC_A)
+Added Component: Designator=C18(FP-GJM155-0_05-IPC_A)
+Added Component: Designator=C19(FP-GJM155-0_05-IPC_A)
+Added Component: Designator=C20(FP-GJM155-0_05-IPC_A)
+Added Component: Designator=C21(FP-GJM155-0_05-IPC_A)
+Added Component: Designator=DA6(FP-DQ1225-IPC_A)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP1"; VariantName = "[No Variations]"
+Added Component: Designator=DA7(FP-DQ1225-IPC_A)
+Add component (AddParameter): Name = "ClassName"; Value = "AMP1"; VariantName = "[No Variations]"
+Added Component: Designator=L9(FP-0402HP-MFG)
+Added Component: Designator=L10(FP-0402HP-MFG)
+Added Component: Designator=L11(FP-0402HP-MFG)
+Added Component: Designator=L12(FP-0402HP-MFG)
+Added Component: Designator=L13(FP-0402HP-MFG)
+Added Pin To Net: NetName=+5 Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C10-2
+Added Pin To Net: NetName=+5 Pin=C17-1
+Added Pin To Net: NetName=GND Pin=C17-2
+Added Pin To Net: NetName=+5 Pin=C19-1
+Added Pin To Net: NetName=GND Pin=C19-2
+Added Pin To Net: NetName=+5 Pin=C20-1
+Added Pin To Net: NetName=GND Pin=C20-2
+Added Pin To Net: NetName=NetC9_1 Pin=DA2-12
+Added Pin To Net: NetName=NetC3_1 Pin=DA4-2
+Added Pin To Net: NetName=GND Pin=DA6-1
+Added Pin To Net: NetName=NetC8_1 Pin=DA6-2
+Added Pin To Net: NetName=GND Pin=DA6-3
+Added Pin To Net: NetName=GND Pin=DA6-4
+Added Pin To Net: NetName=GND Pin=DA6-5
+Added Pin To Net: NetName=GND Pin=DA6-6
+Added Pin To Net: NetName=GND Pin=DA6-7
+Added Pin To Net: NetName=GND Pin=DA6-9
+Added Pin To Net: NetName=GND Pin=DA6-10
+Added Pin To Net: NetName=GND Pin=DA6-13
+Added Pin To Net: NetName=GND Pin=DA7-1
+Added Pin To Net: NetName=NetC16_1 Pin=DA7-2
+Added Pin To Net: NetName=GND Pin=DA7-3
+Added Pin To Net: NetName=GND Pin=DA7-4
+Added Pin To Net: NetName=GND Pin=DA7-5
+Added Pin To Net: NetName=GND Pin=DA7-6
+Added Pin To Net: NetName=GND Pin=DA7-7
+Added Pin To Net: NetName=GND Pin=DA7-9
+Added Pin To Net: NetName=GND Pin=DA7-10
+Added Pin To Net: NetName=GND Pin=DA7-13
+Added Pin To Net: NetName=NetC3_1 Pin=L6-2
+Added Pin To Net: NetName=+5 Pin=L9-2
+Added Pin To Net: NetName=GND Pin=L10-1
+Added Pin To Net: NetName=NetC8_1 Pin=L10-2
+Added Pin To Net: NetName=+5 Pin=L11-2
+Added Pin To Net: NetName=GND Pin=L12-1
+Added Pin To Net: NetName=NetC16_1 Pin=L12-2
+Added Pin To Net: NetName=NetC18_1 Pin=C18-1
+Added Pin To Net: NetName=NetC18_1 Pin=DA2-9
+Added Net: Name=NetC18_1
+Added Pin To Net: NetName=NetC18_2 Pin=C18-2
+Added Pin To Net: NetName=NetC18_2 Pin=DA6-8
+Added Pin To Net: NetName=NetC18_2 Pin=L9-1
+Added Net: Name=NetC18_2
+Added Pin To Net: NetName=NetC21_1 Pin=C21-1
+Added Pin To Net: NetName=NetC21_1 Pin=DA2-4
+Added Net: Name=NetC21_1
+Added Pin To Net: NetName=NetC21_2 Pin=C21-2
+Added Pin To Net: NetName=NetC21_2 Pin=DA7-8
+Added Pin To Net: NetName=NetC21_2 Pin=L11-1
+Added Net: Name=NetC21_2
+Added Pin To Net: NetName=NetDA2_15 Pin=DA2-15
+Added Pin To Net: NetName=NetDA2_15 Pin=XW3-1
+Added Net: Name=NetDA2_15
+Added Member To Class: ClassName=Принципиальная схема Member=Component C17 10nF
+Added Member To Class: ClassName=Принципиальная схема Member=Component C18 100 pF
+Added Member To Class: ClassName=Принципиальная схема Member=Component C19 10pF
+Added Member To Class: ClassName=Принципиальная схема Member=Component C20 10nF
+Added Member To Class: ClassName=Принципиальная схема Member=Component C21 100 pF
+Added Member To Class: ClassName=AMP1 Member=Component DA4 PMA3-83LN+
+Added Member To Class: ClassName=AMP1 Member=Component DA6 PMA3-83LN+
+Added Member To Class: ClassName=Принципиальная схема Member=Component DA6 PMA3-83LN+
+Added Member To Class: ClassName=AMP1 Member=Component DA7 PMA3-83LN+
+Added Member To Class: ClassName=Принципиальная схема Member=Component DA7 PMA3-83LN+
+Added Member To Class: ClassName=Принципиальная схема Member=Component L9 39 nH
+Added Member To Class: ClassName=Принципиальная схема Member=Component L10 18nH
+Added Member To Class: ClassName=Принципиальная схема Member=Component L11 39 nH
+Added Member To Class: ClassName=Принципиальная схема Member=Component L12 18nH
+Added Member To Class: ClassName=Принципиальная схема Member=Component L13 39nH
+Added Member To Class: ClassName=RF_SAME Member=Wire NetC9_1
+Added Member To Class: ClassName=RF_SAME Member=Wire NetC18_1
+Added Member To Class: ClassName=RF Member=Wire NetC18_1
+Added Member To Class: ClassName=RF_SAME Member=Wire NetC18_2
+Added Member To Class: ClassName=RF Member=Wire NetC18_2
+Added Member To Class: ClassName=RF_SAME Member=Wire NetC21_1
+Added Member To Class: ClassName=RF Member=Wire NetC21_1
+Added Member To Class: ClassName=RF Member=Wire NetC21_2
+Added Member To Class: ClassName=RF Member=Wire NetDA2_15
