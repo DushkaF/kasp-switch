@@ -2,18 +2,42 @@
 FileName = Печтаная плата.GBR
 AutoAperture = True
 *************************************************************
-Generating : Bottom Paste
-      File : Печтаная плата.GBP
+Generating : Top Solder
+      File : Печтаная плата.GTS
 
-    Adding Layer      : Bottom Paste
+    Adding Layer      : Top Solder
 
-    Adding Layer      : [4]Power
+    Adding Layer      : [1]Top
 
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
+    D14
+    D15
+    D16
+    D17
     D18
+    D20
+    D21
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
 *************************************************************
 
 *************************************************************
@@ -43,74 +67,6 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Bottom Solder
-      File : Печтаная плата.GBS
-
-    Adding Layer      : Bottom Solder
-
-    Adding Layer      : [4]Power
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D26
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D37
-*************************************************************
-
-*************************************************************
-Generating : Top Solder
-      File : Печтаная плата.GTS
-
-    Adding Layer      : Top Solder
-
-    Adding Layer      : [1]Top
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D14
-    D15
-    D16
-    D17
-    D19
-    D20
-    D21
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-*************************************************************
-
-*************************************************************
-Generating : Bottom Overlay
-      File : Печтаная плата.GBO
-
-    Adding Layer      : Bottom Overlay
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
 Generating : Top Overlay
       File : Печтаная плата.GTO
 
@@ -123,45 +79,6 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : [4]Power
-      File : Печтаная плата.GBL
-
-    Adding Layer      : [4]Power
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D18
-    D30
-    D31
-    D32
-    D33
-    D34
-    D36
-    D39
-    D42
-*************************************************************
-
-*************************************************************
-Generating : [3]Signal
-      File : Печтаная плата.G2
-
-    Adding Layer      : [3]Signal
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D30
-    D31
-    D32
-    D33
-    D34
-    D36
-*************************************************************
-
-*************************************************************
 Generating : [2]MWGND
       File : Печтаная плата.G1
 
@@ -171,12 +88,12 @@ Generating : [2]MWGND
 
 
 Used DCodes :
-    D30
-    D31
-    D32
     D33
     D34
+    D35
     D36
+    D37
+    D38
 *************************************************************
 
 *************************************************************
@@ -189,6 +106,7 @@ Generating : [1]Top
 
 
 Used DCodes :
+    D11
     D14
     D15
     D16
@@ -200,18 +118,94 @@ Used DCodes :
     D22
     D23
     D25
-    D27
-    D30
-    D31
-    D32
+    D28
     D33
     D34
+    D35
     D36
+    D37
     D38
-    D39
-    D40
     D41
     D42
+    D43
+    D44
+    D45
+*************************************************************
+
+*************************************************************
+Generating : [4]Power
+      File : Печтаная плата.GBL
+
+    Adding Layer      : [4]Power
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D42
+    D46
+*************************************************************
+
+*************************************************************
+Generating : [3]Signal
+      File : Печтаная плата.G2
+
+    Adding Layer      : [3]Signal
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : Печтаная плата.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : [4]Power
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : Печтаная плата.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : [4]Power
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D27
+    D33
+    D34
+    D35
+    D36
+    D37
+    D39
+    D40
 *************************************************************
 
 *************************************************************
@@ -220,6 +214,6 @@ Generating : Profile
 
 
 Used DCodes :
-    D43
+    D47
 *************************************************************
 

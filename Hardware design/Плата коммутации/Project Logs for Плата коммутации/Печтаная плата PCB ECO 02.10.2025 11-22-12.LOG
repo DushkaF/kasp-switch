@@ -1,0 +1,7 @@
+Removed Member From Class: ClassName=RF Member=NetC?_1
+Removed Member From Class: ClassName=RF Member=NetC?_2
+Change Component Designator: OldDesignator=C? NewDesignator=C22
+Change Net Name : Old Net Name=NetC?_1 New Net Name=NetC22_1
+Change Net Name : Old Net Name=NetC?_2 New Net Name=NetC22_2
+Added Member To Class: ClassName=RF Member=Wire NetC22_1
+Added Member To Class: ClassName=RF Member=Wire NetC22_2
