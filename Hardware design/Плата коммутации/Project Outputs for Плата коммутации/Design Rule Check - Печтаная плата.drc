@@ -1,0 +1,244 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Печтаная плата.PcbDoc
+Date     : 13.10.2025
+Time     : 16:39:37
+
+WARNING: Design contains shelved or modified (but not repoured) polygons. The result of DRC is not correct. Recommended to restore/repour all polygons and proceed with DRC again
+   Polygon named: GND_L01_P002 On [1]Top
+
+Processing Rule : Clearance Constraint (Gap=0.15mm) (All),(All)
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad C11-1(60.042mm,54.938mm) on [1]Top And Polygon Region (18 hole(s)) [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad C11-2(59.084mm,54.938mm) on [1]Top And Track (59.084mm,52.735mm)(59.084mm,54.938mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad C11-2(59.084mm,54.938mm) on [1]Top And Track (59.084mm,54.938mm)(59.084mm,56.268mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad C12-1(60.042mm,53.388mm) on [1]Top And Polygon Region (18 hole(s)) [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad C12-2(59.084mm,53.388mm) on [1]Top And Track (59.084mm,52.735mm)(59.084mm,54.938mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DA2-1(64.25mm,51.533mm) on [1]Top And Track (64.25mm,51.534mm)(64.25mm,52.087mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DA2-1(64.25mm,51.533mm) on [1]Top And Track (64.25mm,55.751mm)(64.25mm,52.087mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad R1-2(75.775mm,58.291mm) on [1]Top And Track (72.005mm,58.291mm)(76.296mm,58.291mm) on [1]Top 
+Rule Violations :8
+
+Processing Rule : Clearance Constraint (Gap=0.2mm) (InNetClass('RF')),(InNet('GND'))
+   Violation between Clearance Constraint: (Collision < 0.2mm) Between Pad L10-1(11.268mm,50.87mm) on [1]Top And Polygon Region (18 hole(s)) [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad L10-2(11.268mm,50mm) on [1]Top And Track (1.15mm,50mm)(11.268mm,50mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad L10-2(11.268mm,50mm) on [1]Top And Track (11.268mm,50mm)(12.418mm,49.993mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.2mm) Between Pad L12-1(11.268mm,72.62mm) on [1]Top And Polygon Region (27 hole(s)) [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad L12-2(11.268mm,71.75mm) on [1]Top And Track (1.15mm,71.75mm)(11.268mm,71.75mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad L12-2(11.268mm,71.75mm) on [1]Top And Track (11.268mm,71.75mm)(12.374mm,71.757mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.2mm) Between Pad L2-1(28.626mm,29.112mm) on [1]Top And Polygon Region (14 hole(s)) [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad L2-2(28.626mm,28.242mm) on [1]Top And Track (26.205mm,28.242mm)(28.626mm,28.242mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad L2-2(28.626mm,28.242mm) on [1]Top And Track (28.747mm,28.25mm)(29.6mm,28.25mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.2mm) Between Pad L5-1(28.626mm,50.852mm) on [1]Top And Polygon Region (18 hole(s)) [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad L5-2(28.626mm,49.982mm) on [1]Top And Track (26.066mm,49.991mm)(28.617mm,49.991mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad L5-2(28.626mm,49.982mm) on [1]Top And Track (28.617mm,49.991mm)(28.626mm,49.982mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad L5-2(28.626mm,49.982mm) on [1]Top And Track (28.626mm,50.007mm)(29.697mm,50.007mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.2mm) Between Pad L6-1(11.268mm,29.121mm) on [1]Top And Polygon Region (14 hole(s)) [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad L6-2(11.268mm,28.251mm) on [1]Top And Track (1.15mm,28.25mm)(11.267mm,28.25mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad L6-2(11.268mm,28.251mm) on [1]Top And Track (11.267mm,28.25mm)(11.268mm,28.251mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad L6-2(11.268mm,28.251mm) on [1]Top And Track (11.268mm,28.251mm)(12.366mm,28.257mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.2mm) Between Pad L8-1(28.626mm,72.616mm) on [1]Top And Polygon Region (27 hole(s)) [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad L8-2(28.626mm,71.746mm) on [1]Top And Track (26.205mm,71.743mm)(28.622mm,71.743mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad L8-2(28.626mm,71.746mm) on [1]Top And Track (28.626mm,71.746mm)(28.88mm,71.746mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad L8-2(28.626mm,71.746mm) on [1]Top And Track (28.88mm,71.743mm)(28.88mm,71.746mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad L8-2(28.626mm,71.746mm) on [1]Top And Track (28.88mm,71.743mm)(29.743mm,71.743mm) on [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.2mm) Between Pad R1-2(75.775mm,58.291mm) on [1]Top And Polygon Region (27 hole(s)) [1]Top 
+   Violation between Clearance Constraint: (Collision < 0.2mm) Between Pad R1-2(75.775mm,58.291mm) on [1]Top And Via (75.319mm,59.014mm) from [1]Top to [4]Power 
+   Violation between Clearance Constraint: (Collision < 0.2mm) Between Pad R1-2(75.775mm,58.291mm) on [1]Top And Via (75.416mm,57.568mm) from [1]Top to [4]Power 
+   Violation between Clearance Constraint: (0.065mm < 0.2mm) Between Pad R1-2(75.775mm,58.291mm) on [1]Top And Via (75.997mm,57.201mm) from [1]Top to [4]Power 
+   Violation between Clearance Constraint: (Collision < 0.2mm) Between Pad R1-2(75.775mm,58.291mm) on [1]Top And Via (75.997mm,59.233mm) from [1]Top to [4]Power 
+Rule Violations :27
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+   Violation between Short-Circuit Constraint: Between Pad C11-1(60.042mm,54.938mm) on [1]Top And Polygon Region (18 hole(s)) [1]Top Location : [X = 60.157mm][Y = 54.938mm]
+   Violation between Short-Circuit Constraint: Between Pad C11-2(59.084mm,54.938mm) on [1]Top And Track (59.084mm,52.735mm)(59.084mm,54.938mm) on [1]Top Location : [X = 59.084mm][Y = 54.846mm]
+   Violation between Short-Circuit Constraint: Between Pad C11-2(59.084mm,54.938mm) on [1]Top And Track (59.084mm,54.938mm)(59.084mm,56.268mm) on [1]Top Location : [X = 59.084mm][Y = 55.029mm]
+   Violation between Short-Circuit Constraint: Between Pad C12-1(60.042mm,53.388mm) on [1]Top And Polygon Region (18 hole(s)) [1]Top Location : [X = 60.157mm][Y = 53.388mm]
+   Violation between Short-Circuit Constraint: Between Pad C12-2(59.084mm,53.388mm) on [1]Top And Track (59.084mm,52.735mm)(59.084mm,54.938mm) on [1]Top Location : [X = 59.084mm][Y = 53.388mm]
+   Violation between Short-Circuit Constraint: Between Pad DA2-1(64.25mm,51.533mm) on [1]Top And Track (64.25mm,51.534mm)(64.25mm,52.087mm) on [1]Top Location : [X = 64.25mm][Y = 51.668mm]
+   Violation between Short-Circuit Constraint: Between Pad DA2-1(64.25mm,51.533mm) on [1]Top And Track (64.25mm,55.751mm)(64.25mm,52.087mm) on [1]Top Location : [X = 64.25mm][Y = 51.916mm]
+   Violation between Short-Circuit Constraint: Between Pad L10-1(11.268mm,50.87mm) on [1]Top And Polygon Region (18 hole(s)) [1]Top Location : [X = 11.268mm][Y = 50.87mm]
+   Violation between Short-Circuit Constraint: Between Pad L10-2(11.268mm,50mm) on [1]Top And Track (1.15mm,50mm)(11.268mm,50mm) on [1]Top Location : [X = 11.208mm][Y = 50mm]
+   Violation between Short-Circuit Constraint: Between Pad L10-2(11.268mm,50mm) on [1]Top And Track (11.268mm,50mm)(12.418mm,49.993mm) on [1]Top Location : [X = 11.327mm][Y = 50mm]
+   Violation between Short-Circuit Constraint: Between Pad L12-1(11.268mm,72.62mm) on [1]Top And Polygon Region (27 hole(s)) [1]Top Location : [X = 11.268mm][Y = 72.62mm]
+   Violation between Short-Circuit Constraint: Between Pad L12-2(11.268mm,71.75mm) on [1]Top And Track (1.15mm,71.75mm)(11.268mm,71.75mm) on [1]Top Location : [X = 11.208mm][Y = 71.75mm]
+   Violation between Short-Circuit Constraint: Between Pad L12-2(11.268mm,71.75mm) on [1]Top And Track (11.268mm,71.75mm)(12.374mm,71.757mm) on [1]Top Location : [X = 11.327mm][Y = 71.75mm]
+   Violation between Short-Circuit Constraint: Between Pad L2-1(28.626mm,29.112mm) on [1]Top And Polygon Region (14 hole(s)) [1]Top Location : [X = 28.626mm][Y = 29.112mm]
+   Violation between Short-Circuit Constraint: Between Pad L2-2(28.626mm,28.242mm) on [1]Top And Track (26.205mm,28.242mm)(28.626mm,28.242mm) on [1]Top Location : [X = 28.566mm][Y = 28.242mm]
+   Violation between Short-Circuit Constraint: Between Pad L2-2(28.626mm,28.242mm) on [1]Top And Track (28.747mm,28.25mm)(29.6mm,28.25mm) on [1]Top Location : [X = 28.746mm][Y = 28.242mm]
+   Violation between Short-Circuit Constraint: Between Pad L5-1(28.626mm,50.852mm) on [1]Top And Polygon Region (18 hole(s)) [1]Top Location : [X = 28.626mm][Y = 50.852mm]
+   Violation between Short-Circuit Constraint: Between Pad L5-2(28.626mm,49.982mm) on [1]Top And Track (26.066mm,49.991mm)(28.617mm,49.991mm) on [1]Top Location : [X = 28.562mm][Y = 49.982mm]
+   Violation between Short-Circuit Constraint: Between Pad L5-2(28.626mm,49.982mm) on [1]Top And Track (28.617mm,49.991mm)(28.626mm,49.982mm) on [1]Top Location : [X = 28.621mm][Y = 49.982mm]
+   Violation between Short-Circuit Constraint: Between Pad L5-2(28.626mm,49.982mm) on [1]Top And Track (28.626mm,50.007mm)(29.697mm,50.007mm) on [1]Top Location : [X = 28.685mm][Y = 49.982mm]
+   Violation between Short-Circuit Constraint: Between Pad L6-1(11.268mm,29.121mm) on [1]Top And Polygon Region (14 hole(s)) [1]Top Location : [X = 11.268mm][Y = 29.121mm]
+   Violation between Short-Circuit Constraint: Between Pad L6-2(11.268mm,28.251mm) on [1]Top And Track (1.15mm,28.25mm)(11.267mm,28.25mm) on [1]Top Location : [X = 11.208mm][Y = 28.251mm]
+   Violation between Short-Circuit Constraint: Between Pad L6-2(11.268mm,28.251mm) on [1]Top And Track (11.267mm,28.25mm)(11.268mm,28.251mm) on [1]Top Location : [X = 11.267mm][Y = 28.251mm]
+   Violation between Short-Circuit Constraint: Between Pad L6-2(11.268mm,28.251mm) on [1]Top And Track (11.268mm,28.251mm)(12.366mm,28.257mm) on [1]Top Location : [X = 11.327mm][Y = 28.251mm]
+   Violation between Short-Circuit Constraint: Between Pad L8-1(28.626mm,72.616mm) on [1]Top And Polygon Region (27 hole(s)) [1]Top Location : [X = 28.626mm][Y = 72.616mm]
+   Violation between Short-Circuit Constraint: Between Pad L8-2(28.626mm,71.746mm) on [1]Top And Track (26.205mm,71.743mm)(28.622mm,71.743mm) on [1]Top Location : [X = 28.564mm][Y = 71.746mm]
+   Violation between Short-Circuit Constraint: Between Pad L8-2(28.626mm,71.746mm) on [1]Top And Track (28.626mm,71.746mm)(28.88mm,71.746mm) on [1]Top Location : [X = 28.685mm][Y = 71.746mm]
+   Violation between Short-Circuit Constraint: Between Pad L8-2(28.626mm,71.746mm) on [1]Top And Track (28.88mm,71.743mm)(28.88mm,71.746mm) on [1]Top Location : [X = 28.812mm][Y = 71.746mm]
+   Violation between Short-Circuit Constraint: Between Pad L8-2(28.626mm,71.746mm) on [1]Top And Track (28.88mm,71.743mm)(29.743mm,71.743mm) on [1]Top Location : [X = 28.812mm][Y = 71.746mm]
+   Violation between Short-Circuit Constraint: Between Pad R1-2(75.775mm,58.291mm) on [1]Top And Polygon Region (27 hole(s)) [1]Top Location : [X = 0mm][Y = 0mm]
+   Violation between Short-Circuit Constraint: Between Pad R1-2(75.775mm,58.291mm) on [1]Top And Track (72.005mm,58.291mm)(76.296mm,58.291mm) on [1]Top Location : [X = 75.775mm][Y = 58.291mm]
+   Violation between Short-Circuit Constraint: Between Pad R1-2(75.775mm,58.291mm) on [1]Top And Via (75.319mm,59.014mm) from [1]Top to [4]Power Location : [X = 75.423mm][Y = 58.863mm]
+   Violation between Short-Circuit Constraint: Between Pad R1-2(75.775mm,58.291mm) on [1]Top And Via (75.416mm,57.568mm) from [1]Top to [4]Power Location : [X = 75.472mm][Y = 57.718mm]
+   Violation between Short-Circuit Constraint: Between Pad R1-2(75.775mm,58.291mm) on [1]Top And Via (75.997mm,59.233mm) from [1]Top to [4]Power Location : [X = 75.997mm][Y = 58.973mm]
+Rule Violations :34
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net +5 Between Pad C12-1(60.042mm,53.388mm) on [1]Top And Pad C11-1(60.042mm,54.938mm) on [1]Top 
+   Violation between Un-Routed Net Constraint: Net +5 Between Via (59.084mm,56.268mm) from [1]Top to [4]Power And Pad C11-1(60.042mm,54.938mm) on [1]Top 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C12-2(59.084mm,53.388mm) on [1]Top And Pad C11-2(59.084mm,54.938mm) on [1]Top 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (57.449mm,53.636mm) from [1]Top to [4]Power And Pad C12-2(59.084mm,53.388mm) on [1]Top 
+   Violation between Un-Routed Net Constraint: Net NetC13_1 Between Pad DA2-1(64.25mm,51.533mm) on [1]Top And Pad C13-1(72.005mm,58.291mm) on [1]Top 
+   Violation between Un-Routed Net Constraint: Net NetC13_2 Between Pad C13-2(71.048mm,58.291mm) on [1]Top And Pad R1-2(75.775mm,58.291mm) on [1]Top 
+   Violation between Un-Routed Net Constraint: Net NetDA6_2 Between Pad L10-1(11.268mm,50.87mm) on [1]Top And Track (12.425mm,49.987mm)(12.972mm,49.987mm) on [1]Top 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (10.289mm,50.723mm) from [1]Top to [4]Power And Pad L10-2(11.268mm,50mm) on [1]Top 
+   Violation between Un-Routed Net Constraint: Net NetDA7_2 Between Pad L12-1(11.268mm,72.62mm) on [1]Top And Track (11.268mm,71.75mm)(12.374mm,71.757mm) on [1]Top 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (11.127mm,71.027mm) from [1]Top to [4]Power And Pad L12-2(11.268mm,71.75mm) on [1]Top 
+   Violation between Un-Routed Net Constraint: Net NetC9_1 Between Track (26.205mm,28.242mm)(28.626mm,28.242mm) on [1]Top And Pad L2-1(28.626mm,29.112mm) on [1]Top 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad L2-2(28.626mm,28.242mm) on [1]Top And Via (28.649mm,27.524mm) from [1]Top to [4]Power 
+   Violation between Un-Routed Net Constraint: Net NetC18_1 Between Track (28.626mm,50.007mm)(29.697mm,50.007mm) on [1]Top And Pad L5-1(28.626mm,50.852mm) on [1]Top 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad L5-2(28.626mm,49.982mm) on [1]Top And Via (28.648mm,49.268mm) from [1]Top to [4]Power 
+   Violation between Un-Routed Net Constraint: Net NetDA4_2 Between Pad L6-1(11.268mm,29.121mm) on [1]Top And Track (11.268mm,28.251mm)(12.366mm,28.257mm) on [1]Top 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (11.114mm,27.527mm) from [1]Top to [4]Power And Pad L6-2(11.268mm,28.251mm) on [1]Top 
+   Violation between Un-Routed Net Constraint: Net NetC21_1 Between Track (28.626mm,71.746mm)(28.88mm,71.746mm) on [1]Top And Pad L8-1(28.626mm,72.616mm) on [1]Top 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad L8-2(28.626mm,71.746mm) on [1]Top And Via (28.649mm,71.023mm) from [1]Top to [4]Power 
+Rule Violations :18
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+   Violation between Modified Polygon: Polygon Not Repour After Edit  (GND_L01_P002) on [1]Top 
+Rule Violations :1
+
+Processing Rule : Width Constraint (Min=0.2mm) (Max=0.8mm) (Preferred=0.3mm) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=0.5mm) (Preferred=0.254mm) (InNetClass('RF'))
+   Violation between Width Constraint: Track (12.373mm,28.251mm)(12.973mm,28.251mm) on [1]Top Actual Width = 0.3mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (12.384mm,71.747mm)(12.981mm,71.747mm) on [1]Top Actual Width = 0.3mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (12.418mm,49.993mm)(12.425mm,49.987mm) on [1]Top Actual Width = 0.3mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (12.425mm,49.987mm)(12.972mm,49.987mm) on [1]Top Actual Width = 0.3mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (12.972mm,49.487mm)(13.919mm,49.487mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (12.972mm,50.487mm)(13.919mm,50.487mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (12.973mm,27.751mm)(13.92mm,27.751mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (12.973mm,28.751mm)(13.92mm,28.751mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (12.981mm,71.247mm)(13.928mm,71.247mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (12.981mm,72.247mm)(13.928mm,72.247mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (13.919mm,48.539mm)(13.919mm,49.487mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (13.919mm,49.487mm)(13.919mm,49.487mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (13.919mm,50.487mm)(14.419mm,49.987mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (13.928mm,70.3mm)(13.928mm,71.247mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (13.928mm,71.247mm)(13.928mm,71.247mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (13.928mm,72.247mm)(14.428mm,71.747mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (13.92mm,26.804mm)(13.92mm,27.751mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (13.92mm,27.751mm)(13.92mm,27.751mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (13.92mm,27.751mm)(14.42mm,28.251mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (13.92mm,28.751mm)(14.42mm,28.251mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.419mm,48.539mm)(14.419mm,49.987mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.419mm,49.987mm)(14.919mm,49.487mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.428mm,70.3mm)(14.428mm,71.747mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.42mm,26.804mm)(14.42mm,28.251mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.42mm,28.251mm)(14.92mm,27.751mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.42mm,28.251mm)(14.92mm,28.751mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.919mm,48.539mm)(14.919mm,49.487mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.919mm,49.487mm)(15.866mm,49.487mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.919mm,50.487mm)(14.919mm,50.487mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.919mm,50.487mm)(14.919mm,51.434mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.919mm,50.487mm)(15.866mm,50.487mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.928mm,70.3mm)(14.928mm,71.247mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.928mm,71.247mm)(15.875mm,71.247mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.928mm,72.247mm)(14.928mm,72.247mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.928mm,72.247mm)(14.928mm,73.194mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.928mm,72.247mm)(15.875mm,72.247mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.92mm,26.804mm)(14.92mm,27.751mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.92mm,27.751mm)(15.868mm,27.751mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.92mm,28.751mm)(14.92mm,28.751mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.92mm,28.751mm)(14.92mm,29.698mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (14.92mm,28.751mm)(15.868mm,28.751mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (15.921mm,28.244mm)(16.474mm,28.244mm) on [1]Top Actual Width = 0.3mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (15.928mm,71.743mm)(16.482mm,71.743mm) on [1]Top Actual Width = 0.3mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (15.92mm,49.993mm)(16.473mm,49.993mm) on [1]Top Actual Width = 0.3mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (29.697mm,50.007mm)(30.25mm,50.007mm) on [1]Top Actual Width = 0.3mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (29.6mm,28.25mm)(30.303mm,28.25mm) on [1]Top Actual Width = 0.3mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (29.75mm,71.735mm)(30.303mm,71.735mm) on [1]Top Actual Width = 0.3mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (30.303mm,27.75mm)(31.251mm,27.75mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (30.303mm,28.75mm)(31.251mm,28.75mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (30.303mm,49.493mm)(31.251mm,49.493mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (30.303mm,50.493mm)(31.251mm,50.493mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (30.303mm,71.235mm)(31.251mm,71.235mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (30.303mm,72.235mm)(31.251mm,72.235mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (31.251mm,26.803mm)(31.251mm,27.75mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (31.251mm,27.75mm)(31.251mm,27.75mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (31.251mm,28.75mm)(31.751mm,28.25mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (31.251mm,48.546mm)(31.251mm,49.493mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (31.251mm,50.493mm)(31.751mm,49.993mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (31.251mm,70.288mm)(31.251mm,71.235mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (31.251mm,72.235mm)(31.751mm,71.735mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (31.751mm,26.803mm)(31.751mm,28.25mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (31.751mm,48.546mm)(31.751mm,49.993mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (31.751mm,70.288mm)(31.751mm,71.735mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (32.251mm,26.803mm)(32.251mm,27.75mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (32.251mm,27.75mm)(33.198mm,27.75mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (32.251mm,28.75mm)(32.251mm,28.75mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (32.251mm,28.75mm)(32.251mm,29.698mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (32.251mm,28.75mm)(33.198mm,28.75mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (32.251mm,48.546mm)(32.251mm,49.493mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (32.251mm,49.493mm)(33.198mm,49.493mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (32.251mm,50.493mm)(32.251mm,51.44mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (32.251mm,50.493mm)(33.198mm,50.493mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (32.251mm,70.288mm)(32.251mm,71.235mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (32.251mm,71.235mm)(33.198mm,71.235mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (32.251mm,72.235mm)(32.251mm,72.235mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (32.251mm,72.235mm)(32.251mm,73.182mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (32.251mm,72.235mm)(33.198mm,72.235mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (33.198mm,71.735mm)(33.752mm,71.735mm) on [1]Top Actual Width = 0.3mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (33.251mm,28.25mm)(33.804mm,28.25mm) on [1]Top Actual Width = 0.3mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (33.251mm,49.992mm)(33.804mm,49.992mm) on [1]Top Actual Width = 0.3mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (61.967mm,50.75mm)(62.75mm,50.75mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (62.75mm,47.913mm)(62.75mm,48.466mm) on [1]Top Actual Width = 0.3mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (62.75mm,50.75mm)(63.5mm,50mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (62.75mm,51.534mm)(62.75mm,52.087mm) on [1]Top Actual Width = 0.3mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (63.25mm,48.467mm)(63.5mm,48.467mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (63.554mm,49.946mm)(64.25mm,49.25mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (63.5mm,48.467mm)(63.5mm,49.892mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (63.5mm,48.467mm)(63.75mm,48.467mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (63.5mm,50.185mm)(63.5mm,51.533mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (63.5mm,50mm)(64.25mm,50.75mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (63.5mm,51.533mm)(63.5mm,53.104mm) on [1]Top Actual Width = 0.5mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (64.25mm,47.913mm)(64.25mm,48.466mm) on [1]Top Actual Width = 0.3mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (64.25mm,49.25mm)(65.033mm,49.25mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (64.25mm,50.75mm)(65.033mm,50.75mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (64.25mm,51.534mm)(64.25mm,52.087mm) on [1]Top Actual Width = 0.3mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (65.033mm,49.25mm)(65.033mm,49.75mm) on [1]Top Actual Width = 0.2mm, Target Width = 0.418mm
+   Violation between Width Constraint: Track (65.034mm,50.25mm)(65.587mm,50.25mm) on [1]Top Actual Width = 0.3mm, Target Width = 0.418mm
+Rule Violations :97
+
+Processing Rule : Routing Topology Rule(Topology=Shortest) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+   Violation between Net Antennae: Track (64.25mm,51.534mm)(64.25mm,52.087mm) on [1]Top 
+   Violation between Net Antennae: Track (72.005mm,58.291mm)(76.296mm,58.291mm) on [1]Top 
+Rule Violations :2
+
+Processing Rule : Matched Lengths(Tolerance=1mm) (InNetClass('RF'))
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 187
+Waived Violations : 0
+Time Elapsed        : 00:00:00
