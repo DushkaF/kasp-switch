@@ -270,6 +270,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AOYMHSPP
 
+[Document14]
+DocumentPath=..\..\..\документация\Плата коммутации_ПЭ3.xls
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
 DocumentPath=Project Outputs for Плата коммутации\[1].GTL
 DItemRevisionGUID=
@@ -797,6 +814,11 @@ OutputName9=Report Single Pin Nets
 OutputDocumentPath9=
 OutputVariantName9=[No Variations]
 OutputDefault9=0
+OutputType10=GOSTBOM
+OutputName10=GOST BOM
+OutputDocumentPath10=
+OutputVariantName10=[No Variations]
+OutputDefault10=0
 
 [OutputGroup7]
 Name=Other Outputs
