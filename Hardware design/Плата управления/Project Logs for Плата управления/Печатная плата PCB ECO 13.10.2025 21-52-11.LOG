@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=GND Pin=X5-1
+Removed Pin From Net: NetName=VIN Pin=X5-2
+Removed Member From Class: ClassName=Принципиальная схема Member=X5
+Change Component Footprint: Designator=DD1 Old Footprint=FP-BME280-MFG New Footprint=FP-BME280-MFG
+Added Component: Designator=X?(691313510002)
+Add component (AddParameter): Name = "Net1"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Net2"; Value = "+5V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=X?-1
+Added Pin To Net: NetName=VIN Pin=X?-2
+Added Member To Class: ClassName=Принципиальная схема Member=Component X? 2EDGRC-5.08-02P-14

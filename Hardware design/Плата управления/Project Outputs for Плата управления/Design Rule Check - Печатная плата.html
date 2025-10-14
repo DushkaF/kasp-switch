@@ -1,0 +1,591 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\user\Documents\Altium\AD24\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">14.10.2025</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">18:33:06</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:03</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc" class="file"><acronym title="C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc">C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">81</td></tr>
+</table>
+</td>
+</table><a name="IDRVHQAN0MLS41PDMG0OQW34PMKET4B2IPP2EMY4BUM0UNWSXFCJW"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID52OETGRCO1TVM5TF1KQ0EQOZFFHEQRJVRBLF0HDH3QHYZIPIEPKK">Clearance Constraint (Gap=0.2mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDG3UUFDHNA20CLNTPM42MHAC4XGV4CZSCOYPFU1C2KFIBRFYHH0QH">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDIMNPGKKXPWVROAOW31JUUL1YLCEWOW055MFUWHHXTSRHOX4TE0HB">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCEIICEPC01MYBLW3U33GCEZVUJU5I4YAJ3RNEDJ3FR2DFPTSYAT">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5Z0HOMIOPB5OCK02QB1SN0HKNETJX1XJ3VY25KKGTAXMJEXSDSQL">Width Constraint (Min=0.2mm) (Max=1.2mm) (Preferred=0.4mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWYVYRX3Z33FTBDA5XCFVIPZQKKG0YUODUYKNJCOKRD322EPKKFJD">Routing Topology Rule(Topology=Shortest) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCBGVWMAAF33RHE5HVXNYP3UJDHYIEM5BDXMRBAMHNDIXQS3DIZLN">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXTOTLD0NPWKYNTDDFPZ0VGECSFZCJWBRIFBFMIMVMQSVXNESB3IF">Hole Size Constraint (Min=0.025mm) (Max=3mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZPXUPFOE5XNBCN4QCRW0LP1NRDRQEHJUUWVECNGQ0BWBKWDF12YN">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDTWTG4UHFXH3OGXDW0MUKKZCHVKLI0XRIYH4FMEVDDYLATYY4RMJ">Minimum Solder Mask Sliver (Gap=0.2mm) (All),(All)</a></td>
+<td class="column2">66</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDNZXJJCME2DN3CBHN4FPFJCPDFC5IMZZG2HMH1MV1DVMXW5UHGME">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJFVVVY15DNELP13ECH0YUN0SXJ5BVCHICGAL0AH3O5QGNQR0U3RO">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">15</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDLR40PWJ4OVTMJQNK1NZWBJNV1B21XW0S2WXVRQE1U5BUSTN5NU">Room Indacation (Bounding Region = (118.271mm, 61.468mm, 124.351mm, 67.183mm) (InComponentClass('Indacation'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNHIB1SFPJVNUKIBCNUUWGCXW2FNOFNVRVSIADVKE2PCWQ3XLVVDG">Room DCDC1 (Bounding Region = (43.18mm, 55.245mm, 64.516mm, 73.152mm) (InComponentClass('DCDC1'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPYF4MONZ1JNDLE5OPRWHDKOEXNQ21JWCFXR40MPLWIUT4SEEDM0G">Room Power (Bounding Region = (78.105mm, 52.527mm, 90.998mm, 60.017mm) (InComponentClass('Power'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNUIBOD0XPHHMWL50TH2JHO4AGYQIL4HMLQQ2DEPEO5OXKLTAOYG">Room DCDC2 (Bounding Region = (43.129mm, 73.279mm, 64.465mm, 90.17mm) (InComponentClass('DCDC2'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBIUJAVBUTG1DIAZ20GH01U0KUMYQFN3GHWQQD5NWHGHJ3FAEGMYP">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">81</td>
+</tr>
+</table><br><a name="IDTWTG4UHFXH3OGXDW0MUKKZCHVKLI0XRIYH4FMEVDDYLATYY4RMJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=0.2mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2071.131mil|Location2.X=2080.255mil|Location1.Y=3101.941mil|Location2.Y=3111.065mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2071.131mil|Location2.X=2080.255mil|Location1.Y=3101.941mil|Location2.Y=3111.065mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.043mm &lt; 0.2mm) Between Pad C11-1(51.943mm,79.578mm) on Top Layer And Via (52.781mm,78.486mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.043mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2076.608mil|Location2.X=2085.731mil|Location1.Y=2394.94mil|Location2.Y=2404.064mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2076.608mil|Location2.X=2085.731mil|Location1.Y=2394.94mil|Location2.Y=2404.064mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.148mm &lt; 0.2mm) Between Pad C4-1(52.07mm,61.671mm) on Top Layer And Via (52.959mm,60.482mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.148mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2252.981mil|Location2.X=2262.105mil|Location1.Y=2437.052mil|Location2.Y=2446.176mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2252.981mil|Location2.X=2262.105mil|Location1.Y=2437.052mil|Location2.Y=2446.176mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.2mm) Between Pad DA1-1(56.515mm,61.692mm) on Top Layer And Pad DA1-2(56.515mm,62.342mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2252.981mil|Location2.X=2262.105mil|Location1.Y=2462.643mil|Location2.Y=2471.767mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2252.981mil|Location2.X=2262.105mil|Location1.Y=2462.643mil|Location2.Y=2471.767mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.2mm) Between Pad DA1-2(56.515mm,62.342mm) on Top Layer And Pad DA1-3(56.515mm,62.992mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2255.764mil|Location2.X=2264.888mil|Location1.Y=2461.2mil|Location2.Y=2470.813mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2255.764mil|Location2.X=2264.888mil|Location1.Y=2461.2mil|Location2.Y=2470.813mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.149mm &lt; 0.2mm) Between Pad DA1-2(56.515mm,62.342mm) on Top Layer And Via (57.863mm,62.797mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.149mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2252.981mil|Location2.X=2262.105mil|Location1.Y=2488.233mil|Location2.Y=2497.357mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2252.981mil|Location2.X=2262.105mil|Location1.Y=2488.233mil|Location2.Y=2497.357mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.2mm) Between Pad DA1-3(56.515mm,62.992mm) on Top Layer And Pad DA1-4(56.515mm,63.642mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2255.338mil|Location2.X=2264.462mil|Location1.Y=2467.759mil|Location2.Y=2476.883mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2255.338mil|Location2.X=2264.462mil|Location1.Y=2467.759mil|Location2.Y=2476.883mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.12mm &lt; 0.2mm) Between Pad DA1-3(56.515mm,62.992mm) on Top Layer And Via (57.863mm,62.797mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.12mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2162.43mil|Location2.X=2171.554mil|Location1.Y=2488.233mil|Location2.Y=2497.357mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2162.43mil|Location2.X=2171.554mil|Location1.Y=2488.233mil|Location2.Y=2497.357mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.2mm) Between Pad DA1-5(54.215mm,63.642mm) on Top Layer And Pad DA1-6(54.215mm,62.992mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2162.43mil|Location2.X=2171.554mil|Location1.Y=2462.643mil|Location2.Y=2471.767mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2162.43mil|Location2.X=2171.554mil|Location1.Y=2462.643mil|Location2.Y=2471.767mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.2mm) Between Pad DA1-6(54.215mm,62.992mm) on Top Layer And Pad DA1-7(54.215mm,62.342mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2162.43mil|Location2.X=2171.554mil|Location1.Y=2437.052mil|Location2.Y=2446.176mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2162.43mil|Location2.X=2171.554mil|Location1.Y=2437.052mil|Location2.Y=2446.176mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.2mm) Between Pad DA1-7(54.215mm,62.342mm) on Top Layer And Pad DA1-8(54.215mm,61.692mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2246.532mil|Location2.X=2255.657mil|Location1.Y=3142.052mil|Location2.Y=3151.176mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2246.532mil|Location2.X=2255.657mil|Location1.Y=3142.052mil|Location2.Y=3151.176mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.2mm) Between Pad DA2-1(56.351mm,79.599mm) on Top Layer And Pad DA2-2(56.351mm,80.249mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2246.532mil|Location2.X=2255.657mil|Location1.Y=3167.643mil|Location2.Y=3176.767mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2246.532mil|Location2.X=2255.657mil|Location1.Y=3167.643mil|Location2.Y=3176.767mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.2mm) Between Pad DA2-2(56.351mm,80.249mm) on Top Layer And Pad DA2-3(56.351mm,80.899mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2246.532mil|Location2.X=2255.657mil|Location1.Y=3193.233mil|Location2.Y=3202.357mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2246.532mil|Location2.X=2255.657mil|Location1.Y=3193.233mil|Location2.Y=3202.357mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.2mm) Between Pad DA2-3(56.351mm,80.899mm) on Top Layer And Pad DA2-4(56.351mm,81.549mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2155.981mil|Location2.X=2165.105mil|Location1.Y=3193.233mil|Location2.Y=3202.357mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2155.981mil|Location2.X=2165.105mil|Location1.Y=3193.233mil|Location2.Y=3202.357mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.2mm) Between Pad DA2-5(54.051mm,81.549mm) on Top Layer And Pad DA2-6(54.051mm,80.899mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2155.981mil|Location2.X=2165.105mil|Location1.Y=3167.643mil|Location2.Y=3176.767mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2155.981mil|Location2.X=2165.105mil|Location1.Y=3167.643mil|Location2.Y=3176.767mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.2mm) Between Pad DA2-6(54.051mm,80.899mm) on Top Layer And Pad DA2-7(54.051mm,80.249mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2155.981mil|Location2.X=2165.105mil|Location1.Y=3142.052mil|Location2.Y=3151.176mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2155.981mil|Location2.X=2165.105mil|Location1.Y=3142.052mil|Location2.Y=3151.176mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.2mm) Between Pad DA2-7(54.051mm,80.249mm) on Top Layer And Pad DA2-8(54.051mm,79.599mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3208.603mil|Location2.X=3217.727mil|Location1.Y=2222.139mil|Location2.Y=2231.263mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3208.603mil|Location2.X=3217.727mil|Location1.Y=2222.139mil|Location2.Y=2231.263mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.147mm &lt; 0.2mm) Between Pad DA3-1(82.166mm,57.033mm) on Top Layer And Pad DA3-2(82.166mm,56.083mm) on Top Layer [Top Solder] Mask Sliver [0.147mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3208.603mil|Location2.X=3217.727mil|Location1.Y=2184.737mil|Location2.Y=2193.861mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3208.603mil|Location2.X=3217.727mil|Location1.Y=2184.737mil|Location2.Y=2193.861mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.147mm &lt; 0.2mm) Between Pad DA3-2(82.166mm,56.083mm) on Top Layer And Pad DA3-3(82.166mm,55.133mm) on Top Layer [Top Solder] Mask Sliver [0.147mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3766.383mil|Location2.X=3775.507mil|Location1.Y=2530.556mil|Location2.Y=2539.68mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3766.383mil|Location2.X=3775.507mil|Location1.Y=2530.556mil|Location2.Y=2539.68mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-1(95.147mm,63.867mm) on Top Layer And Pad DD2-2(96.417mm,63.867mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4216.383mil|Location2.X=4225.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4216.383mil|Location2.X=4225.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-10(106.577mm,63.867mm) on Top Layer And Pad DD2-11(107.847mm,63.867mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4166.383mil|Location2.X=4175.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4166.383mil|Location2.X=4175.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-10(106.577mm,63.867mm) on Top Layer And Pad DD2-9(105.307mm,63.867mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4266.383mil|Location2.X=4275.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4266.383mil|Location2.X=4275.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-11(107.847mm,63.867mm) on Top Layer And Pad DD2-12(109.117mm,63.867mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4316.383mil|Location2.X=4325.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4316.383mil|Location2.X=4325.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-12(109.117mm,63.867mm) on Top Layer And Pad DD2-13(110.387mm,63.867mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4366.383mil|Location2.X=4375.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4366.383mil|Location2.X=4375.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-13(110.387mm,63.867mm) on Top Layer And Pad DD2-14(111.657mm,63.867mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=2604.375mil|Location2.Y=2613.499mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=2604.375mil|Location2.Y=2613.499mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-15(112.907mm,65.632mm) on Top Layer And Pad DD2-16(112.907mm,66.902mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=2654.375mil|Location2.Y=2663.499mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=2654.375mil|Location2.Y=2663.499mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-16(112.907mm,66.902mm) on Top Layer And Pad DD2-17(112.907mm,68.172mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=2704.375mil|Location2.Y=2713.499mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=2704.375mil|Location2.Y=2713.499mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-17(112.907mm,68.172mm) on Top Layer And Pad DD2-18(112.907mm,69.442mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=2754.375mil|Location2.Y=2763.499mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=2754.375mil|Location2.Y=2763.499mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-18(112.907mm,69.442mm) on Top Layer And Pad DD2-19(112.907mm,70.712mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=2804.375mil|Location2.Y=2813.499mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=2804.375mil|Location2.Y=2813.499mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-19(112.907mm,70.712mm) on Top Layer And Pad DD2-20(112.907mm,71.982mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3816.383mil|Location2.X=3825.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3816.383mil|Location2.X=3825.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-2(96.417mm,63.867mm) on Top Layer And Pad DD2-3(97.687mm,63.867mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=2854.375mil|Location2.Y=2863.499mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=2854.375mil|Location2.Y=2863.499mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-20(112.907mm,71.982mm) on Top Layer And Pad DD2-21(112.907mm,73.252mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=2904.375mil|Location2.Y=2913.499mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=2904.375mil|Location2.Y=2913.499mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-21(112.907mm,73.252mm) on Top Layer And Pad DD2-22(112.907mm,74.522mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=2954.375mil|Location2.Y=2963.499mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=2954.375mil|Location2.Y=2963.499mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-22(112.907mm,74.522mm) on Top Layer And Pad DD2-23(112.907mm,75.792mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=3004.375mil|Location2.Y=3013.499mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=3004.375mil|Location2.Y=3013.499mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-23(112.907mm,75.792mm) on Top Layer And Pad DD2-24(112.907mm,77.062mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=3054.375mil|Location2.Y=3063.499mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=3054.375mil|Location2.Y=3063.499mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-24(112.907mm,77.062mm) on Top Layer And Pad DD2-25(112.907mm,78.332mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=3104.375mil|Location2.Y=3113.499mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4461.265mil|Location2.X=4470.389mil|Location1.Y=3104.375mil|Location2.Y=3113.499mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-25(112.907mm,78.332mm) on Top Layer And Pad DD2-26(112.907mm,79.602mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4366.383mil|Location2.X=4375.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4366.383mil|Location2.X=4375.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-27(111.657mm,81.367mm) on Top Layer And Pad DD2-28(110.387mm,81.367mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4316.383mil|Location2.X=4325.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4316.383mil|Location2.X=4325.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-28(110.387mm,81.367mm) on Top Layer And Pad DD2-29(109.117mm,81.367mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4266.383mil|Location2.X=4275.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4266.383mil|Location2.X=4275.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-29(109.117mm,81.367mm) on Top Layer And Pad DD2-30(107.847mm,81.367mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3866.383mil|Location2.X=3875.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3866.383mil|Location2.X=3875.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-3(97.687mm,63.867mm) on Top Layer And Pad DD2-4(98.957mm,63.867mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4216.383mil|Location2.X=4225.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4216.383mil|Location2.X=4225.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-30(107.847mm,81.367mm) on Top Layer And Pad DD2-31(106.577mm,81.367mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4166.383mil|Location2.X=4175.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4166.383mil|Location2.X=4175.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-31(106.577mm,81.367mm) on Top Layer And Pad DD2-32(105.307mm,81.367mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4116.383mil|Location2.X=4125.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4116.383mil|Location2.X=4125.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-32(105.307mm,81.367mm) on Top Layer And Pad DD2-33(104.037mm,81.367mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4066.383mil|Location2.X=4075.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4066.383mil|Location2.X=4075.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-33(104.037mm,81.367mm) on Top Layer And Pad DD2-34(102.767mm,81.367mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4016.383mil|Location2.X=4025.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4016.383mil|Location2.X=4025.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-34(102.767mm,81.367mm) on Top Layer And Pad DD2-35(101.497mm,81.367mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3966.383mil|Location2.X=3975.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3966.383mil|Location2.X=3975.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-35(101.497mm,81.367mm) on Top Layer And Pad DD2-36(100.227mm,81.367mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3916.383mil|Location2.X=3925.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3916.383mil|Location2.X=3925.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-36(100.227mm,81.367mm) on Top Layer And Pad DD2-37(98.957mm,81.367mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3866.383mil|Location2.X=3875.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3866.383mil|Location2.X=3875.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-37(98.957mm,81.367mm) on Top Layer And Pad DD2-38(97.687mm,81.367mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3816.383mil|Location2.X=3825.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3816.383mil|Location2.X=3825.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-38(97.687mm,81.367mm) on Top Layer And Pad DD2-39(96.417mm,81.367mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3766.383mil|Location2.X=3775.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3766.383mil|Location2.X=3775.507mil|Location1.Y=3219.532mil|Location2.Y=3228.657mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-39(96.417mm,81.367mm) on Top Layer And Pad DD2-40(95.147mm,81.367mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3916.383mil|Location2.X=3925.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3916.383mil|Location2.X=3925.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-4(98.957mm,63.867mm) on Top Layer And Pad DD2-5(100.227mm,63.867mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3966.383mil|Location2.X=3975.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3966.383mil|Location2.X=3975.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-5(100.227mm,63.867mm) on Top Layer And Pad DD2-6(101.497mm,63.867mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4016.383mil|Location2.X=4025.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4016.383mil|Location2.X=4025.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-6(101.497mm,63.867mm) on Top Layer And Pad DD2-7(102.767mm,63.867mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4066.383mil|Location2.X=4075.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4066.383mil|Location2.X=4075.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-7(102.767mm,63.867mm) on Top Layer And Pad DD2-8(104.037mm,63.867mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4116.383mil|Location2.X=4125.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4116.383mil|Location2.X=4125.507mil|Location1.Y=2489.218mil|Location2.Y=2498.341mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.167mm &lt; 0.2mm) Between Pad DD2-8(104.037mm,63.867mm) on Top Layer And Pad DD2-9(105.307mm,63.867mm) on Top Layer [Top Solder] Mask Sliver [0.167mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2058.873mil|Location2.X=2067.997mil|Location1.Y=3078.095mil|Location2.Y=3087.31mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2058.873mil|Location2.X=2067.997mil|Location1.Y=3078.095mil|Location2.Y=3087.31mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.023mm &lt; 0.2mm) Between Pad R10-2(51.749mm,77.47mm) on Top Layer And Via (52.781mm,78.486mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.023mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2276.447mil|Location2.X=2285.571mil|Location1.Y=2484.618mil|Location2.Y=2493.742mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2276.447mil|Location2.X=2285.571mil|Location1.Y=2484.618mil|Location2.Y=2493.742mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.066mm &lt; 0.2mm) Between Pad R1-1(58.595mm,64.084mm) on Top Layer And Via (57.863mm,62.797mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.066mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2293.438mil|Location2.X=2302.562mil|Location1.Y=3168.804mil|Location2.Y=3177.928mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2293.438mil|Location2.X=2302.562mil|Location1.Y=3168.804mil|Location2.Y=3177.928mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.042mm &lt; 0.2mm) Between Pad R12-1(58.512mm,79.756mm) on Top Layer And Via (58.369mm,81.026mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.042mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2062.96mil|Location2.X=2072.084mil|Location1.Y=2370.216mil|Location2.Y=2379.839mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2062.96mil|Location2.X=2072.084mil|Location1.Y=2370.216mil|Location2.Y=2379.839mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.134mm &lt; 0.2mm) Between Pad R2-2(51.8mm,59.484mm) on Top Layer And Via (52.959mm,60.482mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.134mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2098.204mil|Location2.X=2107.328mil|Location1.Y=2373.384mil|Location2.Y=2382.508mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2098.204mil|Location2.X=2107.328mil|Location1.Y=2373.384mil|Location2.Y=2382.508mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.114mm &lt; 0.2mm) Between Pad R3-2(54.118mm,59.563mm) on Top Layer And Via (52.959mm,60.482mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.114mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2293.438mil|Location2.X=2302.562mil|Location1.Y=3202.072mil|Location2.Y=3211.196mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2293.438mil|Location2.X=2302.562mil|Location1.Y=3202.072mil|Location2.Y=3211.196mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.042mm &lt; 0.2mm) Between Pad R9-1(58.512mm,82.296mm) on Top Layer And Via (58.369mm,81.026mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.042mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3994.178mil|Location2.X=4003.302mil|Location1.Y=3718.493mil|Location2.Y=3727.617mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3994.178mil|Location2.X=4003.302mil|Location1.Y=3718.493mil|Location2.Y=3727.617mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.197mm &lt; 0.2mm) Between Pad X7-1(102.068mm,93.689mm) on Top Layer And Pad X7-2(101.068mm,93.689mm) on Top Layer [Top Solder] Mask Sliver [0.197mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3954.808mil|Location2.X=3963.932mil|Location1.Y=3718.493mil|Location2.Y=3727.617mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3954.808mil|Location2.X=3963.932mil|Location1.Y=3718.493mil|Location2.Y=3727.617mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.197mm &lt; 0.2mm) Between Pad X7-2(101.068mm,93.689mm) on Top Layer And Pad X7-3(100.068mm,93.689mm) on Top Layer [Top Solder] Mask Sliver [0.197mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3915.438mil|Location2.X=3924.562mil|Location1.Y=3718.493mil|Location2.Y=3727.617mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3915.438mil|Location2.X=3924.562mil|Location1.Y=3718.493mil|Location2.Y=3727.617mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.197mm &lt; 0.2mm) Between Pad X7-3(100.068mm,93.689mm) on Top Layer And Pad X7-4(99.068mm,93.689mm) on Top Layer [Top Solder] Mask Sliver [0.197mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3876.068mil|Location2.X=3885.192mil|Location1.Y=3718.493mil|Location2.Y=3727.617mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3876.068mil|Location2.X=3885.192mil|Location1.Y=3718.493mil|Location2.Y=3727.617mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.197mm &lt; 0.2mm) Between Pad X7-4(99.068mm,93.689mm) on Top Layer And Pad X7-5(98.068mm,93.689mm) on Top Layer [Top Solder] Mask Sliver [0.197mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3836.698mil|Location2.X=3845.822mil|Location1.Y=3718.493mil|Location2.Y=3727.617mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3836.698mil|Location2.X=3845.822mil|Location1.Y=3718.493mil|Location2.Y=3727.617mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.197mm &lt; 0.2mm) Between Pad X7-5(98.068mm,93.689mm) on Top Layer And Pad X7-6(97.068mm,93.689mm) on Top Layer [Top Solder] Mask Sliver [0.197mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDJFVVVY15DNELP13ECH0YUN0SXJ5BVCHICGAL0AH3O5QGNQR0U3RO"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-2.961mil|Location2.X=8.132mil|Location1.Y=2600.084mil|Location2.Y=2611.176mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-2.961mil|Location2.X=8.132mil|Location1.Y=2600.084mil|Location2.Y=2611.176mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.25mm) Between Board Edge And Track (0.225mm,66.183mm)(0.225mm,78.343mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-2.961mil|Location2.X=8.132mil|Location1.Y=2600.084mil|Location2.Y=2611.176mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-2.961mil|Location2.X=8.132mil|Location1.Y=2600.084mil|Location2.Y=2611.176mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.25mm) Between Board Edge And Track (0.225mm,66.183mm)(12.225mm,66.183mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-2.961mil|Location2.X=8.132mil|Location1.Y=3078.824mil|Location2.Y=3089.916mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-2.961mil|Location2.X=8.132mil|Location1.Y=3078.824mil|Location2.Y=3089.916mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.25mm) Between Board Edge And Track (0.225mm,78.343mm)(12.225mm,78.343mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5502.059mil|Location2.X=5513.152mil|Location1.Y=2752.997mil|Location2.Y=2764.09mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5502.059mil|Location2.X=5513.152mil|Location1.Y=2752.997mil|Location2.Y=2764.09mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.226mm &lt; 0.25mm) Between Board Edge And Track (128.18mm,70.067mm)(139.68mm,70.067mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5502.059mil|Location2.X=5513.152mil|Location1.Y=3241.186mil|Location2.Y=3252.278mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5502.059mil|Location2.X=5513.152mil|Location1.Y=3241.186mil|Location2.Y=3252.278mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.226mm &lt; 0.25mm) Between Board Edge And Track (128.18mm,82.467mm)(139.68mm,82.467mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5503.142mil|Location2.X=5514.234mil|Location1.Y=765.359mil|Location2.Y=776.452mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5503.142mil|Location2.X=5514.234mil|Location1.Y=765.359mil|Location2.Y=776.452mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.171mm &lt; 0.25mm) Between Board Edge And Track (128.235mm,19.581mm)(139.735mm,19.581mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5503.142mil|Location2.X=5514.234mil|Location1.Y=1253.548mil|Location2.Y=1264.641mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5503.142mil|Location2.X=5514.234mil|Location1.Y=1253.548mil|Location2.Y=1264.641mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.171mm &lt; 0.25mm) Between Board Edge And Track (128.235mm,31.981mm)(139.735mm,31.981mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5503.142mil|Location2.X=5514.234mil|Location1.Y=1270.359mil|Location2.Y=1281.452mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5503.142mil|Location2.X=5514.234mil|Location1.Y=1270.359mil|Location2.Y=1281.452mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.171mm &lt; 0.25mm) Between Board Edge And Track (128.235mm,32.408mm)(139.735mm,32.408mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5503.142mil|Location2.X=5514.234mil|Location1.Y=1758.548mil|Location2.Y=1769.641mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5503.142mil|Location2.X=5514.234mil|Location1.Y=1758.548mil|Location2.Y=1769.641mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.171mm &lt; 0.25mm) Between Board Edge And Track (128.235mm,44.808mm)(139.735mm,44.808mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5503.142mil|Location2.X=5514.234mil|Location1.Y=2250.359mil|Location2.Y=2261.452mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5503.142mil|Location2.X=5514.234mil|Location1.Y=2250.359mil|Location2.Y=2261.452mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.171mm &lt; 0.25mm) Between Board Edge And Track (128.235mm,57.3mm)(139.735mm,57.3mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5503.142mil|Location2.X=5514.234mil|Location1.Y=2738.548mil|Location2.Y=2749.641mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5503.142mil|Location2.X=5514.234mil|Location1.Y=2738.548mil|Location2.Y=2749.641mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.171mm &lt; 0.25mm) Between Board Edge And Track (128.235mm,69.7mm)(139.735mm,69.7mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5502.059mil|Location2.X=5513.152mil|Location1.Y=2752.997mil|Location2.Y=2764.09mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5502.059mil|Location2.X=5513.152mil|Location1.Y=2752.997mil|Location2.Y=2764.09mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.226mm &lt; 0.25mm) Between Board Edge And Track (139.68mm,70.067mm)(139.68mm,82.467mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5503.142mil|Location2.X=5514.234mil|Location1.Y=765.359mil|Location2.Y=776.452mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5503.142mil|Location2.X=5514.234mil|Location1.Y=765.359mil|Location2.Y=776.452mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.171mm &lt; 0.25mm) Between Board Edge And Track (139.735mm,19.581mm)(139.735mm,31.981mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5503.142mil|Location2.X=5514.234mil|Location1.Y=1270.359mil|Location2.Y=1281.452mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5503.142mil|Location2.X=5514.234mil|Location1.Y=1270.359mil|Location2.Y=1281.452mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.171mm &lt; 0.25mm) Between Board Edge And Track (139.735mm,32.408mm)(139.735mm,44.808mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\%D0%9F%D0%BB%D0%B0%D1%82%D0%B0 %D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B0%D1%8F %D0%BF%D0%BB%D0%B0%D1%82%D0%B0.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5503.142mil|Location2.X=5514.234mil|Location1.Y=2250.359mil|Location2.Y=2261.452mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\user\Documents\kasp-switch\Hardware design\Плата управления\Печатная плата.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5503.142mil|Location2.X=5514.234mil|Location1.Y=2250.359mil|Location2.Y=2261.452mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.171mm &lt; 0.25mm) Between Board Edge And Track (139.735mm,57.3mm)(139.735mm,69.7mm) on Top Overlay </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
