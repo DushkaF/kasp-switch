@@ -1,0 +1,48 @@
+Removed Parameter Vanufacturer: from Part L1
+Removed Parameter Vanufacturer: from Part L3
+Removed Parameter Vanufacturer: from Part L4
+Removed Parameter Vanufacturer: from Part L7
+Removed Parameter Vanufacturer: from Part L9
+Removed Parameter Vanufacturer: from Part L11
+Removed Parameter Vanufacturer:Murata from Part L2
+Removed Parameter Vanufacturer:Murata from Part L5
+Removed Parameter Vanufacturer:Murata from Part L6
+Removed Parameter Vanufacturer:Murata from Part L8
+Removed Parameter Vanufacturer:Murata from Part L10
+Removed Parameter Vanufacturer:Murata from Part L12
+Change Value of Parameter Package in Part L2 Old=0402 New=
+Change Value of Parameter Tolerance in Part L2 Old=5% New=
+Change Value of Parameter Package in Part L5 Old=0402 New=
+Change Value of Parameter Tolerance in Part L5 Old=5% New=
+Change Value of Parameter Package in Part L6 Old=0402 New=
+Change Value of Parameter Tolerance in Part L6 Old=5% New=
+Change Value of Parameter Package in Part L8 Old=0402 New=
+Change Value of Parameter Tolerance in Part L8 Old=5% New=
+Change Value of Parameter Package in Part L10 Old=0402 New=
+Change Value of Parameter Tolerance in Part L10 Old=5% New=
+Change Value of Parameter Package in Part L12 Old=0402 New=
+Change Value of Parameter Tolerance in Part L12 Old=5% New=
+Added Parameter Manufacturer= to Part L1
+Added Parameter Manufacturer= to Part L2
+Added Parameter Manufacturer= to Part L3
+Added Parameter Manufacturer= to Part L4
+Added Parameter Manufacturer= to Part L5
+Added Parameter Manufacturer= to Part L6
+Added Parameter Manufacturer= to Part L7
+Added Parameter Manufacturer= to Part L8
+Added Parameter Manufacturer= to Part L9
+Added Parameter Manufacturer= to Part L10
+Added Parameter Manufacturer= to Part L11
+Added Parameter Manufacturer= to Part L12
+Replace Symbol from L1 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L2 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L3 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L4 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L5 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L6 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L7 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L8 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L9 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L10 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L11 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L12 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib

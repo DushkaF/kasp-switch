@@ -1,0 +1,245 @@
+Change Component Parameter Comment in C1 Old= New=?
+Change Component Parameter Comment in C2 Old= New=?
+Change Component Parameter Comment in C3 Old= New=?
+Change Component Parameter Comment in C4 Old= New=?
+Change Component Parameter Comment in C5 Old= New=?
+Change Component Parameter Comment in C6 Old= New=?
+Change Component Parameter Comment in C7 Old= New=?
+Change Component Parameter Comment in C8 Old= New=?
+Change Component Parameter Comment in C9 Old= New=?
+Change Component Parameter Comment in C10 Old= New=?
+Change Component Parameter Comment in C11 Old= New=?
+Change Component Parameter Comment in C12 Old= New=?
+Change Component Parameter Comment in C13 Old= New=?
+Change Component Parameter Comment in C14 Old= New=?
+Change Component Parameter Comment in C15 Old= New=?
+Change Component Parameter Comment in C16 Old= New=?
+Change Component Parameter Comment in C17 Old= New=?
+Change Component Parameter Comment in C18 Old= New=?
+Change Component Parameter Comment in C19 Old= New=?
+Change Component Parameter Comment in C20 Old= New=?
+Change Component Parameter Comment in C21 Old= New=?
+Change Component Parameter Comment in C22 Old= New=?
+Change Component Parameter Comment in L1 Old= New=L
+Change Component Parameter Comment in L2 Old= New=L
+Change Component Parameter Comment in L3 Old= New=L
+Change Component Parameter Comment in L4 Old= New=L
+Change Component Parameter Comment in L5 Old= New=L
+Change Component Parameter Comment in L6 Old= New=L
+Change Component Parameter Comment in L7 Old= New=L
+Change Component Parameter Comment in L8 Old= New=L
+Change Component Parameter Comment in L9 Old= New=L
+Change Component Parameter Comment in L10 Old= New=L
+Change Component Parameter Comment in L11 Old= New=L
+Change Component Parameter Comment in L12 Old= New=L
+Change Component Parameter Comment in R1 Old= New=R
+Added Parameter Dielectric= to Part C1
+Added Parameter Dielectric= to Part C2
+Added Parameter Dielectric= to Part C3
+Added Parameter Dielectric= to Part C4
+Added Parameter Dielectric= to Part C5
+Added Parameter Dielectric= to Part C6
+Added Parameter Dielectric= to Part C7
+Added Parameter Dielectric= to Part C8
+Added Parameter Dielectric= to Part C9
+Added Parameter Dielectric= to Part C10
+Added Parameter Dielectric= to Part C11
+Added Parameter Dielectric= to Part C12
+Added Parameter Dielectric= to Part C13
+Added Parameter Dielectric= to Part C14
+Added Parameter Dielectric= to Part C15
+Added Parameter Dielectric= to Part C16
+Added Parameter Dielectric= to Part C17
+Added Parameter Dielectric= to Part C18
+Added Parameter Dielectric= to Part C19
+Added Parameter Dielectric= to Part C20
+Added Parameter Dielectric= to Part C21
+Added Parameter Dielectric= to Part C22
+Added Parameter Dielectric= to Part L1
+Added Parameter Dielectric= to Part L2
+Added Parameter Dielectric= to Part L3
+Added Parameter Dielectric= to Part L4
+Added Parameter Dielectric= to Part L5
+Added Parameter Dielectric= to Part L6
+Added Parameter Dielectric= to Part L7
+Added Parameter Dielectric= to Part L8
+Added Parameter Dielectric= to Part L9
+Added Parameter Dielectric= to Part L10
+Added Parameter Dielectric= to Part L11
+Added Parameter Dielectric= to Part L12
+Added Parameter Dielectric= to Part R1
+Added Parameter Manufacturer= to Part C1
+Added Parameter Manufacturer= to Part C2
+Added Parameter Manufacturer= to Part C3
+Added Parameter Manufacturer= to Part C4
+Added Parameter Manufacturer= to Part C5
+Added Parameter Manufacturer= to Part C6
+Added Parameter Manufacturer= to Part C7
+Added Parameter Manufacturer= to Part C8
+Added Parameter Manufacturer= to Part C9
+Added Parameter Manufacturer= to Part C10
+Added Parameter Manufacturer= to Part C11
+Added Parameter Manufacturer= to Part C12
+Added Parameter Manufacturer= to Part C13
+Added Parameter Manufacturer= to Part C14
+Added Parameter Manufacturer= to Part C15
+Added Parameter Manufacturer= to Part C16
+Added Parameter Manufacturer= to Part C17
+Added Parameter Manufacturer= to Part C18
+Added Parameter Manufacturer= to Part C19
+Added Parameter Manufacturer= to Part C20
+Added Parameter Manufacturer= to Part C21
+Added Parameter Manufacturer= to Part C22
+Added Parameter Manufacturer= to Part R1
+Added Parameter Package= to Part C1
+Added Parameter Package= to Part C2
+Added Parameter Package= to Part C3
+Added Parameter Package= to Part C4
+Added Parameter Package= to Part C5
+Added Parameter Package= to Part C6
+Added Parameter Package= to Part C7
+Added Parameter Package= to Part C8
+Added Parameter Package= to Part C9
+Added Parameter Package= to Part C10
+Added Parameter Package= to Part C11
+Added Parameter Package= to Part C12
+Added Parameter Package= to Part C13
+Added Parameter Package= to Part C14
+Added Parameter Package= to Part C15
+Added Parameter Package= to Part C16
+Added Parameter Package= to Part C17
+Added Parameter Package= to Part C18
+Added Parameter Package= to Part C19
+Added Parameter Package= to Part C20
+Added Parameter Package= to Part C21
+Added Parameter Package= to Part C22
+Added Parameter Package= to Part L1
+Added Parameter Package= to Part L2
+Added Parameter Package= to Part L3
+Added Parameter Package= to Part L4
+Added Parameter Package= to Part L5
+Added Parameter Package= to Part L6
+Added Parameter Package= to Part L7
+Added Parameter Package= to Part L8
+Added Parameter Package= to Part L9
+Added Parameter Package= to Part L10
+Added Parameter Package= to Part L11
+Added Parameter Package= to Part L12
+Added Parameter Package= to Part R1
+Added Parameter Tolerance= to Part C1
+Added Parameter Tolerance= to Part C2
+Added Parameter Tolerance= to Part C3
+Added Parameter Tolerance= to Part C4
+Added Parameter Tolerance= to Part C5
+Added Parameter Tolerance= to Part C6
+Added Parameter Tolerance= to Part C7
+Added Parameter Tolerance= to Part C8
+Added Parameter Tolerance= to Part C9
+Added Parameter Tolerance= to Part C10
+Added Parameter Tolerance= to Part C11
+Added Parameter Tolerance= to Part C12
+Added Parameter Tolerance= to Part C13
+Added Parameter Tolerance= to Part C14
+Added Parameter Tolerance= to Part C15
+Added Parameter Tolerance= to Part C16
+Added Parameter Tolerance= to Part C17
+Added Parameter Tolerance= to Part C18
+Added Parameter Tolerance= to Part C19
+Added Parameter Tolerance= to Part C20
+Added Parameter Tolerance= to Part C21
+Added Parameter Tolerance= to Part C22
+Added Parameter Tolerance= to Part L1
+Added Parameter Tolerance= to Part L2
+Added Parameter Tolerance= to Part L3
+Added Parameter Tolerance= to Part L4
+Added Parameter Tolerance= to Part L5
+Added Parameter Tolerance= to Part L6
+Added Parameter Tolerance= to Part L7
+Added Parameter Tolerance= to Part L8
+Added Parameter Tolerance= to Part L9
+Added Parameter Tolerance= to Part L10
+Added Parameter Tolerance= to Part L11
+Added Parameter Tolerance= to Part L12
+Added Parameter Tolerance= to Part R1
+Added Parameter Vanufacturer= to Part L1
+Added Parameter Vanufacturer= to Part L2
+Added Parameter Vanufacturer= to Part L3
+Added Parameter Vanufacturer= to Part L4
+Added Parameter Vanufacturer= to Part L5
+Added Parameter Vanufacturer= to Part L6
+Added Parameter Vanufacturer= to Part L7
+Added Parameter Vanufacturer= to Part L8
+Added Parameter Vanufacturer= to Part L9
+Added Parameter Vanufacturer= to Part L10
+Added Parameter Vanufacturer= to Part L11
+Added Parameter Vanufacturer= to Part L12
+Added Parameter VDC= to Part C1
+Added Parameter VDC= to Part C2
+Added Parameter VDC= to Part C3
+Added Parameter VDC= to Part C4
+Added Parameter VDC= to Part C5
+Added Parameter VDC= to Part C6
+Added Parameter VDC= to Part C7
+Added Parameter VDC= to Part C8
+Added Parameter VDC= to Part C9
+Added Parameter VDC= to Part C10
+Added Parameter VDC= to Part C11
+Added Parameter VDC= to Part C12
+Added Parameter VDC= to Part C13
+Added Parameter VDC= to Part C14
+Added Parameter VDC= to Part C15
+Added Parameter VDC= to Part C16
+Added Parameter VDC= to Part C17
+Added Parameter VDC= to Part C18
+Added Parameter VDC= to Part C19
+Added Parameter VDC= to Part C20
+Added Parameter VDC= to Part C21
+Added Parameter VDC= to Part C22
+Added Parameter VDC= to Part L1
+Added Parameter VDC= to Part L2
+Added Parameter VDC= to Part L3
+Added Parameter VDC= to Part L4
+Added Parameter VDC= to Part L5
+Added Parameter VDC= to Part L6
+Added Parameter VDC= to Part L7
+Added Parameter VDC= to Part L8
+Added Parameter VDC= to Part L9
+Added Parameter VDC= to Part L10
+Added Parameter VDC= to Part L11
+Added Parameter VDC= to Part L12
+Added Parameter VDC= to Part R1
+Replace Symbol from C1 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C2 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C3 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C4 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C5 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C6 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C7 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C8 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C9 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C10 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C11 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C12 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C13 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C14 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C15 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C16 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C17 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C18 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C19 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C20 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C21 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C22 C in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from L1 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L2 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L3 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L4 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L5 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L6 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L7 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L8 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L9 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L10 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L11 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from L12 L in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with L from kasp_komut_lib.SchLib
+Replace Symbol from R1 R in C:\Users\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with R from kasp_komut_lib.SchLib
