@@ -135,10 +135,14 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Document6]
 =======
 [Document12]
 >>>>>>> 4967873dc27cecc5fb86d8815b62a147a6edebc8
+=======
+[Document6]
+>>>>>>> 4c4a0c4773d3c8431299eadb93ea007df5538531
 DocumentPath=Печтаная плата.PCBDwf
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -156,8 +160,12 @@ GenerateClassCluster=0
 DocumentUniqueId=AOYMHSPP
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 [Document13]
+=======
+[Document7]
+>>>>>>> 4c4a0c4773d3c8431299eadb93ea007df5538531
 DocumentPath=..\..\..\документация\Плата коммутации_ПЭ3.xls
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -174,7 +182,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document14]
+[Document8]
 DocumentPath=Плата коммутации.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -191,7 +199,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document15]
+[Document9]
 DocumentPath=..\..\документация\Плата коммутации_ПЭ3.xls
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -208,7 +216,44 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+<<<<<<< HEAD
 >>>>>>> 4967873dc27cecc5fb86d8815b62a147a6edebc8
+=======
+[Document10]
+DocumentPath=..\..\документация\Плата коммутации_ПЭ3_2.xls
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document11]
+DocumentPath=СНАБ.758761.ХХХ.PCBDwf
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=HJCJVPAV
+
+>>>>>>> 4c4a0c4773d3c8431299eadb93ea007df5538531
 [GeneratedDocument1]
 DocumentPath=Project Outputs for Плата коммутации\Печтаная плата.G1
 DItemRevisionGUID=
@@ -297,11 +342,11 @@ DItemRevisionGUID=
 
 [Parameter1]
 Name=Вид_документа
-Value=СНАБ.468534 .001Э4
+Value=СНАБ.468534 .001
 
 [Parameter2]
 Name=Вид_документа_PCB
-Value=
+Value=СНАБ.468534 .001
 
 [Parameter3]
 Name=Вид_документа_SCH
@@ -349,11 +394,11 @@ Value=
 
 [Parameter14]
 Name=Наименование
-Value=
+Value=СНАБ.468534 .001
 
 [Parameter15]
 Name=Наименование1
-Value=
+Value=СНАБ.468534 .001
 
 [Parameter16]
 Name=Наименование2
@@ -365,7 +410,7 @@ Value=
 
 [Parameter18]
 Name=Наименование_PCB
-Value=
+Value=СНАБ.468534 .001
 
 [Parameter19]
 Name=Номер_документа_изменение
@@ -385,15 +430,15 @@ Value=
 
 [Parameter23]
 Name=Обозначение
-Value=
+Value=СНАБ.468534 .001
 
 [Parameter24]
 Name=Обозначение_PCB
-Value=
+Value=СНАБ.468534 .001
 
 [Parameter25]
 Name=Обозначение_Код
-Value=
+Value=СНАБ.468534 .001
 
 [Parameter26]
 Name=Перв.Примен.
@@ -1461,25 +1506,25 @@ ComponentLibIdentifierKind0=Library Name And Type
 ComponentLibraryIdentifier0=kasp_komut_lib.SchLib
 ComponentDesignItemID0=C
 ComponentSymbolReference0=C
-ComponentUpdate0=1
+ComponentUpdate0=0
 ComponentIsDeviceSheet0=0
 ComponentLibIdentifierKind1=Library Name And Type
 ComponentLibraryIdentifier1=kasp_komut_lib.SchLib
 ComponentDesignItemID1=HMC7992
 ComponentSymbolReference1=HMC7992
-ComponentUpdate1=1
+ComponentUpdate1=0
 ComponentIsDeviceSheet1=0
 ComponentLibIdentifierKind2=Library Name And Type
 ComponentLibraryIdentifier2=kasp_komut_lib.SchLib
 ComponentDesignItemID2=JST-2P
 ComponentSymbolReference2=JST-2P
-ComponentUpdate2=1
+ComponentUpdate2=0
 ComponentIsDeviceSheet2=0
 ComponentLibIdentifierKind3=Library Name And Type
 ComponentLibraryIdentifier3=kasp_komut_lib.SchLib
 ComponentDesignItemID3=JST-3P
 ComponentSymbolReference3=JST-3P
-ComponentUpdate3=1
+ComponentUpdate3=0
 ComponentIsDeviceSheet3=0
 ComponentLibIdentifierKind4=Library Name And Type
 ComponentLibraryIdentifier4=kasp_komut_lib.SchLib
@@ -1491,19 +1536,19 @@ ComponentLibIdentifierKind5=Library Name And Type
 ComponentLibraryIdentifier5=kasp_komut_lib.SchLib
 ComponentDesignItemID5=PMA3-83LN+
 ComponentSymbolReference5=PMA3-83LN+
-ComponentUpdate5=1
+ComponentUpdate5=0
 ComponentIsDeviceSheet5=0
 ComponentLibIdentifierKind6=Library Name And Type
 ComponentLibraryIdentifier6=kasp_komut_lib.SchLib
 ComponentDesignItemID6=R
 ComponentSymbolReference6=R
-ComponentUpdate6=1
+ComponentUpdate6=0
 ComponentIsDeviceSheet6=0
 ComponentLibIdentifierKind7=Library Name And Type
 ComponentLibraryIdentifier7=kasp_komut_lib.SchLib
 ComponentDesignItemID7=SMA
 ComponentSymbolReference7=SMA
-ComponentUpdate7=1
+ComponentUpdate7=0
 ComponentIsDeviceSheet7=0
 FullReplace=0
 UpdateDesignatorLock=1
@@ -1518,22 +1563,36 @@ RemoveParameters=0
 AddModels=1
 RemoveModels=1
 UpdateCurrentModels=1
-ParameterName0=ClassName
-ParameterUpdate0=1
-ParameterName1=Comment
-ParameterUpdate1=0
-ParameterName2=Component Kind
-ParameterUpdate2=1
-ParameterName3=Description
+ParameterName0=Comment
+ParameterUpdate0=0
+ParameterName1=Component Kind
+ParameterUpdate1=1
+ParameterName2=Description
+ParameterUpdate2=0
+ParameterName3=Dielectric
 ParameterUpdate3=1
 ParameterName4=Library Reference
 ParameterUpdate4=1
-ParameterName5=Net1
+ParameterName5=Manufacturer
 ParameterUpdate5=1
-ParameterName6=Net2
+ParameterName6=Net1
 ParameterUpdate6=1
-ParameterName7=Net3
+ParameterName7=Net2
 ParameterUpdate7=1
+ParameterName8=Net3
+ParameterUpdate8=1
+ParameterName9=Package
+ParameterUpdate9=1
+ParameterName10=Part_number
+ParameterUpdate10=0
+ParameterName11=Tolerance
+ParameterUpdate11=1
+ParameterName12=Value
+ParameterUpdate12=0
+ParameterName13=Vanufacturer
+ParameterUpdate13=1
+ParameterName14=VDC
+ParameterUpdate14=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
