@@ -1,0 +1,73 @@
+Change Component Comment : Designator=C7 Old Comment=47uF New Comment=10uF
+Change Component Comment : Designator=C15 Old Comment=47uF New Comment=10uF
+Change Component Comment : Designator=R7 Old Comment=500 New Comment=56
+Change Component Comment : Designator=R8 Old Comment=500 New Comment=56
+Change Component Comment : Designator=R2 Old Comment=500k New Comment=510k
+Change Component Comment : Designator=R10 Old Comment=500k New Comment=510k
+Change Component Comment : Designator=HL2 Old Comment=? New Comment=FYLS-0805URC
+Change Component Comment : Designator=X6 Old Comment=JST-6P New Comment=S6B-XH-A
+Change Component Comment : Designator=X7 Old Comment=JST-6P New Comment=SM06B-SRSS-TB
+Change Component Comment : Designator=DA3 Old Comment=XC6219B332MRN New Comment=LM8805SF5-3.3
+Change Component Comment : Designator=HL1 Old Comment=АЛС New Comment=FYLS-0805URC
+Change Component Comment : Designator=VD1 Old Comment=Диод Шоттки New Comment=B0520W
+Change Component Designator: OldDesignator=X5 NewDesignator=X9
+Change Component Designator: OldDesignator=X6 NewDesignator=X10
+Change Component Designator: OldDesignator=X7 NewDesignator=X11
+Change component parameters: Designator = "C10" ("C10"); Footprint = "CAPC2012X10N"; UniqueID = "\QHALIHSA" ("\QHALIHSA")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "DCDC2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Murata"; VariantName = "[No Variations]"
+Change component parameters: Designator = "HL1" ("HL1"); Footprint = "LED 0805"; UniqueID = "\TVVAMWGF" ("\TVVAMWGF")
+Change component parameters (AddParameter): Name = "ClassName"; Value = "Indacation"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Ningbo Foryard Optoelectronics"; VariantName = "[No Variations]"
+Added Component: Designator=X5(FP-S4B-XH-A-1_LF_SN-MFG)
+Add component (AddParameter): Name = "Net1"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Net2"; Value = "+5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Net3"; Value = "A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Net4"; Value = "B"; VariantName = "[No Variations]"
+Added Component: Designator=X6(FP-S4B-XH-A-1_LF_SN-MFG)
+Add component (AddParameter): Name = "Net1"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Net2"; Value = "+5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Net3"; Value = "A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Net4"; Value = "B"; VariantName = "[No Variations]"
+Added Component: Designator=X7(FP-S4B-XH-A-1_LF_SN-MFG)
+Add component (AddParameter): Name = "Net1"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Net2"; Value = "+5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Net3"; Value = "A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Net4"; Value = "B"; VariantName = "[No Variations]"
+Added Component: Designator=X8(FP-S4B-XH-A-1_LF_SN-MFG)
+Add component (AddParameter): Name = "Net1"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Net2"; Value = "+5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Net3"; Value = "A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Net4"; Value = "B"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=X5-1
+Added Pin To Net: NetName=+5 гр1 Pin=X5-2
+Added Pin To Net: NetName=GND Pin=X6-1
+Added Pin To Net: NetName=+5 гр1 Pin=X6-2
+Added Pin To Net: NetName=GND Pin=X7-1
+Added Pin To Net: NetName=+5 гр2 Pin=X7-2
+Added Pin To Net: NetName=GND Pin=X8-1
+Added Pin To Net: NetName=+5 гр2 Pin=X8-2
+Change Net Name : Old Net Name=A гр1 New Net Name=A1 гр1
+Change Net Name : Old Net Name=A гр2 New Net Name=A1 гр2
+Change Net Name : Old Net Name=B гр1 New Net Name=B1 гр1
+Change Net Name : Old Net Name=B гр2 New Net Name=B1 гр2
+Added Pin To Net: NetName=A2 гр1 Pin=DD2-11
+Added Pin To Net: NetName=A2 гр1 Pin=X5-3
+Added Pin To Net: NetName=A2 гр1 Pin=X6-3
+Added Net: Name=A2 гр1
+Added Pin To Net: NetName=A2 гр2 Pin=DD2-31
+Added Pin To Net: NetName=A2 гр2 Pin=X7-3
+Added Pin To Net: NetName=A2 гр2 Pin=X8-3
+Added Net: Name=A2 гр2
+Added Pin To Net: NetName=B2 гр1 Pin=DD2-10
+Added Pin To Net: NetName=B2 гр1 Pin=X5-4
+Added Pin To Net: NetName=B2 гр1 Pin=X6-4
+Added Net: Name=B2 гр1
+Added Pin To Net: NetName=B2 гр2 Pin=DD2-23
+Added Pin To Net: NetName=B2 гр2 Pin=X7-4
+Added Pin To Net: NetName=B2 гр2 Pin=X8-4
+Added Net: Name=B2 гр2
+Added Member To Class: ClassName=Принципиальная схема Member=Component X8 S4B-XH-A(LF)(SN)
+Added Member To Class: ClassName=Принципиальная схема Member=Component X9 2EDGRC-5.08-02P-14
+Added Member To Class: ClassName=Принципиальная схема Member=Component X10 S6B-XH-A
+Added Member To Class: ClassName=Принципиальная схема Member=Component X11 SM06B-SRSS-TB

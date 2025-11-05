@@ -134,7 +134,15 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 [Document6]
+=======
+[Document12]
+>>>>>>> 4967873dc27cecc5fb86d8815b62a147a6edebc8
+=======
+[Document6]
+>>>>>>> 4c4a0c4773d3c8431299eadb93ea007df5538531
 DocumentPath=Печтаная плата.PCBDwf
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -151,7 +159,13 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AOYMHSPP
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+[Document13]
+=======
 [Document7]
+>>>>>>> 4c4a0c4773d3c8431299eadb93ea007df5538531
 DocumentPath=..\..\..\документация\Плата коммутации_ПЭ3.xls
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -202,6 +216,9 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+<<<<<<< HEAD
+>>>>>>> 4967873dc27cecc5fb86d8815b62a147a6edebc8
+=======
 [Document10]
 DocumentPath=..\..\документация\Плата коммутации_ПЭ3_2.xls
 AnnotationEnabled=1
@@ -236,114 +253,53 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HJCJVPAV
 
+>>>>>>> 4c4a0c4773d3c8431299eadb93ea007df5538531
 [GeneratedDocument1]
-DocumentPath=Project Outputs for Плата коммутации\[1].GTL
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=Project Outputs for Плата коммутации\[2].G1
-DItemRevisionGUID=
-
-[GeneratedDocument3]
-DocumentPath=Project Outputs for Плата коммутации\[3].G2
-DItemRevisionGUID=
-
-[GeneratedDocument4]
-DocumentPath=Project Outputs for Плата коммутации\[4].GBL
-DItemRevisionGUID=
-
-[GeneratedDocument5]
-DocumentPath=Project Outputs for Плата коммутации\BP.GBP
-DItemRevisionGUID=
-
-[GeneratedDocument6]
-DocumentPath=Project Outputs for Плата коммутации\BS.GBS
-DItemRevisionGUID=
-
-[GeneratedDocument7]
-DocumentPath=..\..\..\..\..\Андрей\Documents\БЭК\Kasp pelleng\kasp-switch\Hardware design\Плата коммутации\Project Outputs for Плата коммутации\Design Rule Check - Печтаная плата.html
-DItemRevisionGUID=
-
-[GeneratedDocument8]
-DocumentPath=Project Outputs for Плата коммутации\Design Rule Check - Печтаная плата.html
-DItemRevisionGUID=
-
-[GeneratedDocument9]
-DocumentPath=Project Outputs for Плата коммутации\Outline.GM
-DItemRevisionGUID=
-
-[GeneratedDocument10]
-DocumentPath=Project Outputs for Плата коммутации\Silk.GTO
-DItemRevisionGUID=
-
-[GeneratedDocument11]
-DocumentPath=Project Outputs for Плата коммутации\TP.GTP
-DItemRevisionGUID=
-
-[GeneratedDocument12]
-DocumentPath=Project Outputs for Плата коммутации\TS.GTS
-DItemRevisionGUID=
-
-[GeneratedDocument13]
-DocumentPath=Project Outputs for Плата коммутации\Печтаная плата.DRR
-DItemRevisionGUID=
-
-[GeneratedDocument14]
-DocumentPath=Project Outputs for Плата коммутации\Печтаная плата.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument15]
 DocumentPath=Project Outputs for Плата коммутации\Печтаная плата.G1
 DItemRevisionGUID=
 
-[GeneratedDocument16]
+[GeneratedDocument2]
 DocumentPath=Project Outputs for Плата коммутации\Печтаная плата.G2
 DItemRevisionGUID=
 
-[GeneratedDocument17]
+[GeneratedDocument3]
 DocumentPath=Project Outputs for Плата коммутации\Печтаная плата.GBL
 DItemRevisionGUID=
 
-[GeneratedDocument18]
+[GeneratedDocument4]
 DocumentPath=Project Outputs for Плата коммутации\Печтаная плата.GBP
 DItemRevisionGUID=
 
-[GeneratedDocument19]
+[GeneratedDocument5]
 DocumentPath=Project Outputs for Плата коммутации\Печтаная плата.GBS
 DItemRevisionGUID=
 
-[GeneratedDocument20]
+[GeneratedDocument6]
 DocumentPath=Project Outputs for Плата коммутации\Печтаная плата.GM
 DItemRevisionGUID=
 
-[GeneratedDocument21]
+[GeneratedDocument7]
 DocumentPath=Project Outputs for Плата коммутации\Печтаная плата.GTL
 DItemRevisionGUID=
 
-[GeneratedDocument22]
+[GeneratedDocument8]
 DocumentPath=Project Outputs for Плата коммутации\Печтаная плата.GTO
 DItemRevisionGUID=
 
-[GeneratedDocument23]
+[GeneratedDocument9]
 DocumentPath=Project Outputs for Плата коммутации\Печтаная плата.GTP
 DItemRevisionGUID=
 
-[GeneratedDocument24]
+[GeneratedDocument10]
 DocumentPath=Project Outputs for Плата коммутации\Печтаная плата.GTS
 DItemRevisionGUID=
 
-[GeneratedDocument25]
-DocumentPath=Project Outputs for Плата коммутации\Печтаная плата.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument26]
-DocumentPath=Project Outputs for Плата коммутации\Печтаная плата.REP
-DItemRevisionGUID=
-
-[GeneratedDocument27]
+[GeneratedDocument11]
 DocumentPath=Project Outputs for Плата коммутации\Печтаная плата.TXT
 DItemRevisionGUID=
 
+<<<<<<< HEAD
+=======
 [GeneratedDocument28]
 DocumentPath=Project Outputs for Плата коммутации\Печтаная плата_Copper_Signal_1.gbr
 DItemRevisionGUID=
@@ -592,6 +548,7 @@ Value=
 Name=п_Утв_Р
 Value=
 
+>>>>>>> 4967873dc27cecc5fb86d8815b62a147a6edebc8
 [Configuration1]
 Name=Sources
 ParameterCount=0
@@ -831,11 +788,6 @@ OutputName3=Test Point Report
 OutputDocumentPath3=
 OutputVariantName3=[No Variations]
 OutputDefault3=0
-OutputType4=Wire Bonding Table
-OutputName4=Wire Bonding Table Report
-OutputDocumentPath4=
-OutputVariantName4=[No Variations]
-OutputDefault4=0
 
 [OutputGroup5]
 Name=Fabrication Outputs
@@ -1266,15 +1218,6 @@ Type147=1
 Type148=1
 Type149=1
 Type150=1
-Type151=1
-Type152=1
-Type153=1
-Type154=1
-Type155=1
-Type156=1
-Type157=1
-Type158=1
-Type159=1
 
 [Difference Levels]
 Type1=1
@@ -1358,12 +1301,6 @@ Type78=1
 Type79=1
 Type80=1
 Type81=1
-Type82=1
-Type83=1
-Type84=1
-Type85=1
-Type86=1
-Type87=1
 
 [Electrical Rules Check]
 Type1=1
@@ -1519,16 +1456,6 @@ Type150=2
 Type151=2
 Type152=1
 Type153=1
-Type154=0
-Type155=0
-Type156=0
-Type157=0
-Type158=0
-Type159=0
-Type160=0
-Type161=0
-Type162=1
-Type163=1
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW

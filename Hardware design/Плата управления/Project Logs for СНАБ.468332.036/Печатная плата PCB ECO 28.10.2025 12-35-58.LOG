@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=A2 гр2 Pin=DD2-31
+Removed Pin From Net: NetName=B2 гр2 Pin=DD2-32
+Added Pin To Net: NetName=B2 гр2 Pin=DD2-31
+Added Pin To Net: NetName=A2 гр2 Pin=DD2-32
