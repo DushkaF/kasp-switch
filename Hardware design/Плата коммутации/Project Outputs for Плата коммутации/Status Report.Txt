@@ -1,0 +1,13 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Плата коммутации.PrjPcb]
+   Generated File[Печтаная плата_Paste_Top.gbr]
+   Generated File[Печтаная плата_Profile.gbr]
+   Generated File[Печтаная плата.EXTREP]
+   Generated File[Печтаная плата.REP]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 18:06:53 On 12.11.2025
