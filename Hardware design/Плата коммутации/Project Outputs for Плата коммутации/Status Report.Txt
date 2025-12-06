@@ -1,13 +1,12 @@
-Output: Gerber Files
-Type  : Gerber
-From  : Variant [[No Variations]] of Project [Плата коммутации.PrjPcb]
-   Generated File[Печтаная плата_Paste_Top.gbr]
-   Generated File[Печтаная плата_Profile.gbr]
-   Generated File[Печтаная плата.EXTREP]
-   Generated File[Печтаная плата.REP]
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Плата коммутации.PrjPcb]
+   Generated File[Печтаная плата-Plated.TXT]
+   Generated File[Печтаная плата.LDP]
+   Generated File[Печтаная плата.DRR]
 
 
-Files Generated   : 4
+Files Generated   : 3
 Documents Printed : 0
 
-Finished Output Generation At 18:06:53 On 12.11.2025
+Finished Output Generation At 19:25:25 On 05.12.2025

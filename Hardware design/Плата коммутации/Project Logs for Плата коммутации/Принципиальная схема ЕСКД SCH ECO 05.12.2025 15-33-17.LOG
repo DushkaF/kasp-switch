@@ -1,0 +1,72 @@
+Change Value of Parameter Dielectric in Part C23 Old=C0G New=
+Change Value of Parameter Manufacturer in Part C23 Old=Murata New=
+Change Value of Parameter Package in Part C23 Old=0402 New=
+Change Value of Parameter Tolerance in Part C23 Old=5% New=
+Change Value of Parameter VDC in Part C23 Old=50 New=
+Change Value of Parameter Dielectric in Part C24 Old=C0G New=
+Change Value of Parameter Manufacturer in Part C24 Old=Murata New=
+Change Value of Parameter Package in Part C24 Old=0402 New=
+Change Value of Parameter Tolerance in Part C24 Old=5% New=
+Change Value of Parameter VDC in Part C24 Old=50 New=
+Change Value of Parameter Dielectric in Part C25 Old=C0G New=
+Change Value of Parameter Manufacturer in Part C25 Old=Murata New=
+Change Value of Parameter Package in Part C25 Old=0402 New=
+Change Value of Parameter Tolerance in Part C25 Old=5% New=
+Change Value of Parameter VDC in Part C25 Old=50 New=
+Change Value of Parameter Dielectric in Part C26 Old=C0G New=
+Change Value of Parameter Manufacturer in Part C26 Old=Murata New=
+Change Value of Parameter Package in Part C26 Old=0402 New=
+Change Value of Parameter Tolerance in Part C26 Old=5% New=
+Change Value of Parameter VDC in Part C26 Old=50 New=
+Change Value of Parameter Dielectric in Part C27 Old=C0G New=
+Change Value of Parameter Manufacturer in Part C27 Old=Murata New=
+Change Value of Parameter Package in Part C27 Old=0402 New=
+Change Value of Parameter Tolerance in Part C27 Old=5% New=
+Change Value of Parameter VDC in Part C27 Old=50 New=
+Change Value of Parameter Dielectric in Part C28 Old=C0G New=
+Change Value of Parameter Manufacturer in Part C28 Old=Murata New=
+Change Value of Parameter Package in Part C28 Old=0402 New=
+Change Value of Parameter Tolerance in Part C28 Old=5% New=
+Change Value of Parameter VDC in Part C28 Old=50 New=
+Change Value of Parameter Manufacturer in Part R2 Old=YAGEO New=
+Change Value of Parameter Package in Part R2 Old=0402 New=
+Change Value of Parameter Tolerance in Part R2 Old=0.1% New=
+Change Value of Parameter Manufacturer in Part R3 Old=YAGEO New=
+Change Value of Parameter Package in Part R3 Old=0402 New=
+Change Value of Parameter Tolerance in Part R3 Old=0.1% New=
+Change Value of Parameter Manufacturer in Part R4 Old=YAGEO New=
+Change Value of Parameter Package in Part R4 Old=0402 New=
+Change Value of Parameter Tolerance in Part R4 Old=0.1% New=
+Change Value of Parameter Manufacturer in Part R5 Old=YAGEO New=
+Change Value of Parameter Package in Part R5 Old=0402 New=
+Change Value of Parameter Tolerance in Part R5 Old=0.1% New=
+Change Value of Parameter Manufacturer in Part R6 Old=YAGEO New=
+Change Value of Parameter Package in Part R6 Old=0402 New=
+Change Value of Parameter Tolerance in Part R6 Old=0.1% New=
+Change Value of Parameter Manufacturer in Part R7 Old=YAGEO New=
+Change Value of Parameter Package in Part R7 Old=0402 New=
+Change Value of Parameter Tolerance in Part R7 Old=0.1% New=
+Change Value of Parameter Manufacturer in Part R8 Old=YAGEO New=
+Change Value of Parameter Package in Part R8 Old=0402 New=
+Change Value of Parameter Tolerance in Part R8 Old=0.1% New=
+Change Value of Parameter Manufacturer in Part R9 Old=YAGEO New=
+Change Value of Parameter Package in Part R9 Old=0402 New=
+Change Value of Parameter Tolerance in Part R9 Old=0.1% New=
+Change Value of Parameter Manufacturer in Part R10 Old=YAGEO New=
+Change Value of Parameter Package in Part R10 Old=0402 New=
+Change Value of Parameter Tolerance in Part R10 Old=0.1% New=
+Replace Symbol from C23 C in C:\Users\user\Documents\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C24 C in C:\Users\user\Documents\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C25 C in C:\Users\user\Documents\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C26 C in C:\Users\user\Documents\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C27 C in C:\Users\user\Documents\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from C28 C in C:\Users\user\Documents\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with C from kasp_komut_lib.SchLib
+Replace Symbol from R2 R in C:\Users\user\Documents\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with R from kasp_komut_lib.SchLib
+Replace Symbol from R3 R in C:\Users\user\Documents\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with R from kasp_komut_lib.SchLib
+Replace Symbol from R4 R in C:\Users\user\Documents\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with R from kasp_komut_lib.SchLib
+Replace Symbol from R5 R in C:\Users\user\Documents\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with R from kasp_komut_lib.SchLib
+Replace Symbol from R6 R in C:\Users\user\Documents\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with R from kasp_komut_lib.SchLib
+Replace Symbol from R7 R in C:\Users\user\Documents\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with R from kasp_komut_lib.SchLib
+Replace Symbol from R8 R in C:\Users\user\Documents\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with R from kasp_komut_lib.SchLib
+Replace Symbol from R9 R in C:\Users\user\Documents\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with R from kasp_komut_lib.SchLib
+Replace Symbol from R10 R in C:\Users\user\Documents\kasp-switch\Hardware design\Плата коммутации\Принципиальная схема ЕСКД.SchDoc with R from kasp_komut_lib.SchLib

@@ -1,0 +1,133 @@
+Change Component Footprint: Designator=R3 Old Footprint=FP-CR0402-IPC_A New Footprint=FP-CR0402-IPC_A-parallel-coplanar
+Change Component Footprint: Designator=R4 Old Footprint=FP-CR0402-IPC_A New Footprint=FP-CR0402-IPC_A-parallel-coplanar
+Change Component Footprint: Designator=R6 Old Footprint=FP-CR0402-IPC_A New Footprint=FP-CR0402-IPC_A-parallel-coplanar
+Change Component Footprint: Designator=R7 Old Footprint=FP-CR0402-IPC_A New Footprint=FP-CR0402-IPC_A-parallel-coplanar
+Change Component Footprint: Designator=R9 Old Footprint=FP-CR0402-IPC_A New Footprint=FP-CR0402-IPC_A-parallel-coplanar
+Change Component Footprint: Designator=R10 Old Footprint=FP-CR0402-IPC_A New Footprint=FP-CR0402-IPC_A-parallel-coplanar
+Change Component Footprint: Designator=C23 Old Footprint=FP-GJM155-0_05-IPC_A New Footprint=FP-C0402-parallel-coplanar
+Change Component Footprint: Designator=C24 Old Footprint=FP-GJM155-0_05-IPC_A New Footprint=FP-C0402-parallel-coplanar
+Change Component Footprint: Designator=C25 Old Footprint=FP-GJM155-0_05-IPC_A New Footprint=FP-C0402-parallel-coplanar
+Change Component Footprint: Designator=C26 Old Footprint=FP-GJM155-0_05-IPC_A New Footprint=FP-C0402-parallel-coplanar
+Change Component Footprint: Designator=C27 Old Footprint=FP-GJM155-0_05-IPC_A New Footprint=FP-C0402-parallel-coplanar
+Change Component Footprint: Designator=C28 Old Footprint=FP-GJM155-0_05-IPC_A New Footprint=FP-C0402-parallel-coplanar
+Change component parameters: Designator = "C23" ("C23"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\DASATUUB" ("\DASATUUB")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part_number"; Value = "GJM1555C1H100JB01D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "C24" ("C24"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\TWHVGYDX" ("\TWHVGYDX")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part_number"; Value = "GJM1555C1H100JB01D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "C25" ("C25"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\OJKCDTZB" ("\OJKCDTZB")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part_number"; Value = "GJM1555C1H100JB01D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "C26" ("C26"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\UPOGNUOH" ("\UPOGNUOH")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part_number"; Value = "GJM1555C1H100JB01D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "C27" ("C27"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\DDICJDSA" ("\DDICJDSA")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part_number"; Value = "GJM1555C1H100JB01D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "C28" ("C28"); Footprint = "FP-GJM155-0_05-IPC_A"; UniqueID = "\DUTFJAVW" ("\DUTFJAVW")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part_number"; Value = "GJM1555C1H100JB01D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R2" ("R2"); Footprint = "FP-CR0402-IPC_A"; UniqueID = "\SJQYHTXN" ("\SJQYHTXN")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part_number"; Value = "RT0402BRE0750RL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "50 Om"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R3" ("R3"); Footprint = "FP-CR0402-IPC_A"; UniqueID = "\BQCSSVWX" ("\BQCSSVWX")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part_number"; Value = "RT0402BRE0750RL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "50 Om"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R4" ("R4"); Footprint = "FP-CR0402-IPC_A"; UniqueID = "\ITKPHKTC" ("\ITKPHKTC")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part_number"; Value = "RT0402BRE0750RL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "50 Om"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R5" ("R5"); Footprint = "FP-CR0402-IPC_A"; UniqueID = "\QFGVSRGC" ("\QFGVSRGC")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part_number"; Value = "RT0402BRE0750RL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "50 Om"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R6" ("R6"); Footprint = "FP-CR0402-IPC_A"; UniqueID = "\LPLTQFJU" ("\LPLTQFJU")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part_number"; Value = "RT0402BRE0750RL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "50 Om"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R7" ("R7"); Footprint = "FP-CR0402-IPC_A"; UniqueID = "\USBYVRRD" ("\USBYVRRD")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part_number"; Value = "RT0402BRE0750RL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "50 Om"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R8" ("R8"); Footprint = "FP-CR0402-IPC_A"; UniqueID = "\EIOVKDSO" ("\EIOVKDSO")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part_number"; Value = "RT0402BRE0750RL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "50 Om"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R9" ("R9"); Footprint = "FP-CR0402-IPC_A"; UniqueID = "\NBXYMMBS" ("\NBXYMMBS")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part_number"; Value = "RT0402BRE0750RL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "50 Om"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R10" ("R10"); Footprint = "FP-CR0402-IPC_A"; UniqueID = "\ZWEYNYLX" ("\ZWEYNYLX")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part_number"; Value = "RT0402BRE0750RL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "50 Om"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Added Member To Class: ClassName=Принципиальная схема ЕСКД Member=Component XW3 SMA

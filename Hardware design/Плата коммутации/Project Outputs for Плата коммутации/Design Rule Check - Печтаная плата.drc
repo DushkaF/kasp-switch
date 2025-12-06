@@ -1,0 +1,15 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\user\Documents\kasp-switch\Hardware design\Плата коммутации\Печтаная плата.PcbDoc
+Date     : 06.12.2025
+Time     : 14:57:12
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Tolerance=1mm) (InNetClass('RF'))
+Rule Violations :0
+
+
+Violations Detected : 0
+Waived Violations : 0
+Time Elapsed        : 00:00:01

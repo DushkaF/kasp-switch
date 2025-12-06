@@ -1,0 +1,195 @@
+Removed Pin From Net: NetName=NetC9_2 Pin=C9-1
+Removed Pin From Net: NetName=NetC18_2 Pin=C18-1
+Removed Pin From Net: NetName=NetC21_2 Pin=C21-1
+Removed Pin From Net: NetName=NetC9_1 Pin=DA1-2
+Removed Pin From Net: NetName=NetC18_1 Pin=DA3-2
+Removed Pin From Net: NetName=NetC21_1 Pin=DA5-2
+Removed Pin From Net: NetName=NetC9_1 Pin=L2-1
+Removed Pin From Net: NetName=NetC18_1 Pin=L5-1
+Removed Pin From Net: NetName=NetC21_1 Pin=L8-1
+Change Component Designator: OldDesignator=XW3 NewDesignator=XW4
+Change Component Designator: OldDesignator=XW4 NewDesignator=XW3
+Added Component: Designator=C23(FP-GJM155-0_05-IPC_A)
+Add component (AddParameter): Name = "Dielectric"; Value = "C0G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Murata"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part_number"; Value = "GJM1555C1H100JB01D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VDC"; Value = "50"; VariantName = "[No Variations]"
+Added Component: Designator=C24(FP-GJM155-0_05-IPC_A)
+Add component (AddParameter): Name = "Dielectric"; Value = "C0G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Murata"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part_number"; Value = "GJM1555C1H100JB01D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VDC"; Value = "50"; VariantName = "[No Variations]"
+Added Component: Designator=C25(FP-GJM155-0_05-IPC_A)
+Add component (AddParameter): Name = "Dielectric"; Value = "C0G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Murata"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part_number"; Value = "GJM1555C1H100JB01D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VDC"; Value = "50"; VariantName = "[No Variations]"
+Added Component: Designator=C26(FP-GJM155-0_05-IPC_A)
+Add component (AddParameter): Name = "Dielectric"; Value = "C0G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Murata"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part_number"; Value = "GJM1555C1H100JB01D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VDC"; Value = "50"; VariantName = "[No Variations]"
+Added Component: Designator=C27(FP-GJM155-0_05-IPC_A)
+Add component (AddParameter): Name = "Dielectric"; Value = "C0G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Murata"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part_number"; Value = "GJM1555C1H100JB01D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VDC"; Value = "50"; VariantName = "[No Variations]"
+Added Component: Designator=C28(FP-GJM155-0_05-IPC_A)
+Add component (AddParameter): Name = "Dielectric"; Value = "C0G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Murata"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part_number"; Value = "GJM1555C1H100JB01D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VDC"; Value = "50"; VariantName = "[No Variations]"
+Added Component: Designator=R2(FP-CR0402-IPC_A)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "YAGEO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part_number"; Value = "RT0402BRE0750RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "50 Om"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R3(FP-CR0402-IPC_A)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "YAGEO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part_number"; Value = "RT0402BRE0750RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "50 Om"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R4(FP-CR0402-IPC_A)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "YAGEO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part_number"; Value = "RT0402BRE0750RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "50 Om"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R5(FP-CR0402-IPC_A)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "YAGEO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part_number"; Value = "RT0402BRE0750RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "50 Om"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R6(FP-CR0402-IPC_A)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "YAGEO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part_number"; Value = "RT0402BRE0750RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "50 Om"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R7(FP-CR0402-IPC_A)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "YAGEO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part_number"; Value = "RT0402BRE0750RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "50 Om"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R8(FP-CR0402-IPC_A)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "YAGEO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part_number"; Value = "RT0402BRE0750RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "50 Om"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R9(FP-CR0402-IPC_A)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "YAGEO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part_number"; Value = "RT0402BRE0750RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "50 Om"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R10(FP-CR0402-IPC_A)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "YAGEO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part_number"; Value = "RT0402BRE0750RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "50 Om"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VDC"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC9_1 Pin=C9-1
+Added Pin To Net: NetName=NetC18_1 Pin=C18-1
+Added Pin To Net: NetName=NetC21_1 Pin=C21-1
+Added Pin To Net: NetName=GND Pin=C23-1
+Added Pin To Net: NetName=NetC9_1 Pin=C23-2
+Added Pin To Net: NetName=GND Pin=C24-1
+Added Pin To Net: NetName=NetDA4_2 Pin=C24-2
+Added Pin To Net: NetName=GND Pin=C25-1
+Added Pin To Net: NetName=NetC18_1 Pin=C25-2
+Added Pin To Net: NetName=GND Pin=C26-1
+Added Pin To Net: NetName=NetDA6_2 Pin=C26-2
+Added Pin To Net: NetName=GND Pin=C27-1
+Added Pin To Net: NetName=NetC21_1 Pin=C27-2
+Added Pin To Net: NetName=GND Pin=C28-1
+Added Pin To Net: NetName=NetDA7_2 Pin=C28-2
+Added Pin To Net: NetName=NetC9_1 Pin=R2-2
+Added Pin To Net: NetName=GND Pin=R3-1
+Added Pin To Net: NetName=NetC9_1 Pin=R3-2
+Added Pin To Net: NetName=GND Pin=R4-2
+Added Pin To Net: NetName=NetC18_1 Pin=R5-2
+Added Pin To Net: NetName=GND Pin=R6-1
+Added Pin To Net: NetName=NetC18_1 Pin=R6-2
+Added Pin To Net: NetName=GND Pin=R7-2
+Added Pin To Net: NetName=NetC21_1 Pin=R8-2
+Added Pin To Net: NetName=GND Pin=R9-1
+Added Pin To Net: NetName=NetC21_1 Pin=R9-2
+Added Pin To Net: NetName=GND Pin=R10-2
+Change Net Name : Old Net Name=NetDA4_2 New Net Name=NetC24_2
+Change Net Name : Old Net Name=NetDA6_2 New Net Name=NetC26_2
+Change Net Name : Old Net Name=NetDA7_2 New Net Name=NetC28_2
+Added Pin To Net: NetName=NetDA1_2 Pin=DA1-2
+Added Pin To Net: NetName=NetDA1_2 Pin=L2-1
+Added Pin To Net: NetName=NetDA1_2 Pin=R2-1
+Added Pin To Net: NetName=NetDA1_2 Pin=R4-1
+Added Net: Name=NetDA1_2
+Added Pin To Net: NetName=NetDA3_2 Pin=DA3-2
+Added Pin To Net: NetName=NetDA3_2 Pin=L5-1
+Added Pin To Net: NetName=NetDA3_2 Pin=R5-1
+Added Pin To Net: NetName=NetDA3_2 Pin=R7-1
+Added Net: Name=NetDA3_2
+Added Pin To Net: NetName=NetDA5_2 Pin=DA5-2
+Added Pin To Net: NetName=NetDA5_2 Pin=L8-1
+Added Pin To Net: NetName=NetDA5_2 Pin=R8-1
+Added Pin To Net: NetName=NetDA5_2 Pin=R10-1
+Added Net: Name=NetDA5_2
+Added Member To Class: ClassName=Принципиальная схема ЕСКД Member=Component C9 100 pF
+Added Member To Class: ClassName=Принципиальная схема ЕСКД Member=Component C13 10nF
+Added Member To Class: ClassName=Принципиальная схема ЕСКД Member=Component C18 100 pF
+Added Member To Class: ClassName=Принципиальная схема ЕСКД Member=Component C21 100 pF
+Added Member To Class: ClassName=Принципиальная схема ЕСКД Member=Component C23 0.2pF
+Added Member To Class: ClassName=Принципиальная схема ЕСКД Member=Component C24 0.2pF
+Added Member To Class: ClassName=Принципиальная схема ЕСКД Member=Component C25 0.2pF
+Added Member To Class: ClassName=Принципиальная схема ЕСКД Member=Component C26 0.2pF
+Added Member To Class: ClassName=Принципиальная схема ЕСКД Member=Component C27 0.2pF
+Added Member To Class: ClassName=Принципиальная схема ЕСКД Member=Component C28 0.2pF
+Added Member To Class: ClassName=Принципиальная схема ЕСКД Member=Component R2 37 Om
+Added Member To Class: ClassName=Принципиальная схема ЕСКД Member=Component R3 150 Om
+Added Member To Class: ClassName=Принципиальная схема ЕСКД Member=Component R4 150 Om
+Added Member To Class: ClassName=Принципиальная схема ЕСКД Member=Component R5 37 Om
+Added Member To Class: ClassName=Принципиальная схема ЕСКД Member=Component R6 150 Om
+Added Member To Class: ClassName=Принципиальная схема ЕСКД Member=Component R7 150 Om
+Added Member To Class: ClassName=Принципиальная схема ЕСКД Member=Component R8 37 Om
+Added Member To Class: ClassName=Принципиальная схема ЕСКД Member=Component R9 150 Om
+Added Member To Class: ClassName=Принципиальная схема ЕСКД Member=Component R10 150 Om
